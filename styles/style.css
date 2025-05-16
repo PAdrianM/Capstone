@@ -105,6 +105,12 @@ p {
   filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.3));
 }
 
+.column-left, .column-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 /* Efecto "presionado" */
 .pixel-button:active {
   transform: translate(0, 0);
