@@ -1,45 +1,171 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* Previene scroll horizontal */
+}
+
+/* Estilos base para ambos contenedores */
+.center-container, .lateral-container {
+  border: 2px solid black;
+  border-radius: 2px;
+  box-sizing: border-box;
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 12px; /* Márgenes uniformes */
+}
+
+/* Mobile First (≤760px) */
+.lateral-container {
+  padding: 16px 16px !important;
+}
+
+.profile-image {
+  width: 84%; /* Ahora ocupará el 100% del contenedor .underlined-image */
+  border-radius: 4px;
+  padding: 16px 16px; /* Solo padding vertical */
+  display: block; /* Elimina espacio fantasma debajo de la imagen */
+}
+
+.underlined-image {
+  width: 100%; /* 100% - (12px + 12px) */
+  border: 2px solid #4783f1;
+  margin: 0;
+  padding: 0;
+}
+
+.resume{
+  width: 100%;
+  height: 82%;
+  padding: 16px 16px; /* Solo padding vertical */
+}
+
+.title-name {
+  font-size: 56px;
+  font-weight: 500;
+  margin: 8px 0px 8px 0px;
+  
+}
+
+.subtitle {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 8px 0px 8px 0px;
+  text-underline-offset: 0.2em;
+  text-decoration: underline;
+  text-decoration-color: #4783f1;
+  text-decoration-thickness: 2px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 8px 0px 8px 0px;
+}
+
+/* Contenedor principal con distribución en 2 columnas */
+.pixel-art-container {
+  background-color: #4783f1;
+  border: 4px solid #000;
+  padding: 15px;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
+  gap: 10px;
+  max-width: 500px; /* Ajusta según necesidad */
+}
+
+/* Botones con nuevo hover y alineación */
+.pixel-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 15px;
+  background-color: #506182;
+  color: #fff;
+  text-decoration: none;
+  border: 3px solid #000;
+  font-family: "Jersey 15", sans-serif;
+  transition: all 0.2s;
+  margin: 0; /* Eliminamos el margin para mejor control */
+}
+
+/* Efecto hover - Azul vibrante que complementa */
+.pixel-button:hover {
+  background-color: #3a6bc8; /* Tonos de tu azul principal */
+  transform: translate(-2px, -2px);
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo de los iconos */
+.pixel-icon {
+  width: 24px;
+  height: 24px;
+  image-rendering: pixelated;
+  filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.3));
+}
+
+/* Efecto "presionado" */
+.pixel-button:active {
+  transform: translate(0, 0);
+  box-shadow: none;
 }
 
 .center-container {
-  margin: 12px 24px;
-  padding: 12px;
-  width: calc(100% - 48px); /* Resta los márgenes izquierdo y derecho */
-  border-radius: 2px;
-  border: 4px solid black;
+  width: calc(100% - 24px);
+  height: calc(100vh - 104px); /* Altura menos márgenes y navbar */
+  overflow-y: auto; /* Scroll interno */
 }
 
-.lateral-container {
-  position: static;
-  width: calc(100% - 48px); /* Igual que arriba */
-  height: auto;
-  border: 4px solid black;
-  margin: 12px 24px;
-  box-sizing: border-box;
-}
+/* Desktop (>760px) */
+@media (min-width: 761px) {
+  body {
+    padding-left: 424px; /* 400px + 24px (12+12) */
+  }
 
-@media (min-width: 992px) {
-  .center-container {
-    margin-left: calc(400px + 36px); /* Ancho del lateral + márgenes */
-    margin-right: 24px;
-    width: calc(100% - 400px - 60px); /* Ajuste para el ancho y márgenes */
-    padding: 12px;
+  .profile-image {
+    width: 72%;
+    height: auto;
+    border-radius: 4px;
+    padding: 16px 16px; /* Solo padding vertical */
+    
   }
 
   .lateral-container {
     position: fixed;
     top: 12px;
+    left: 12px;
     bottom: 12px;
-    left: 24px; /* Mantiene el margen izquierdo */
-    width: 400px;
-    box-sizing: border-box;
-    margin: 0; /* Elimina márgenes porque ahora es fixed */
+    width: 376px; /* 400px - 24px (12+12) */
+    margin: 0;
+    padding: 12px;
+    overflow-y: auto;
   }
-  
-  /* Ajuste para la columna invisible de Bootstrap */
+
+  .center-container {
+    margin: 12px 12px 12px 0;
+    width: auto;
+    height: calc(100vh - 24px); /* Altura menos márgenes */
+    min-height: auto;
+  }
+
+  /* Elimina espacio de la columna Bootstrap */
   .d-none.d-lg-block {
-    width: 0px !important; /* 400px + 24px de margen */
+    display: none !important;
   }
+}
+
+/* Versión móvil (1 columna) */
+@media (max-width: 600px) {
+  .pixel-art-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Ajustes para el navbar y contenido */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: white !important; /* Fondo sólido */
 }

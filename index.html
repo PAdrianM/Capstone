@@ -11,38 +11,77 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <!-- lateral-container -->
-    <div
-      class="lateral-container d-flex flex-column align-items-center p-3"
-    >
-    <div class="underlined-container d-flex flex-column align-items-center p-3">
-      <img
-        src="./assets/images/image.png"
-        alt="Adrian Garcia"
-        width="150"
-        height="200"
-      />
-      <h1 class="title-name">Adrian Garcia</h1>
-      <h2 class="subtitle">Software Engineer</h2>
-    </div>
-      
-      <div class="resume d-flex flex-column align-items-center p-3">
+    <div class="lateral-container d-flex flex-column align-items-center p-3">
+      <div class="underlined-image d-flex flex-column align-items-center">
+        <img
+          class="profile-image"
+          src="./assets/images/profile-2.jpg"
+          alt="Adrian Garcia"
+        />
+      </div>
+
+      <div class="resume d-flex flex-column align-items-center">
+        <h1 class="title-name">Adrian Garcia</h1>
+        <h2 class="subtitle">Software Engineer</h2>
         <p class="resume-text">
-          I'm passionate about programming and have been developing software for
-          over three years. <br />
-          My main goals as a developer are: modernization, continuous
-          improvement, staying up-to-date with current technologies, and clean
-          code.
+          Code lover & problem solver. I build web apps with clean architecture
+          and smooth UX. Always tinkering with new tech to make things faster
+          and smarter.
         </p>
 
-        <div class="contact-me">
-          <a class="social" href="a">Resume</a>
-          <a class="social" href="a">Repository</a>
-          <a class="social" href="a">LinkedIn</a>
-          <a class="social" href="a">Gmail</a>
+        <h2 class="subtitle">Contact Me</h2>
+        <div class="contact-me pixel-art-container">
+          <!-- Columna Izquierda -->
+          <div class="column-left">
+            <a class="social pixel-button" href="a">
+              <img
+                src="https://i.pinimgproxy.com/?url=aHR0cHM6Ly9jZG4taWNvbnMtcG5nLmZsYXRpY29uLmNvbS8yNTYvOTA5LzkwOTI2My5wbmc=&ts=1747427694&sig=8ee71c9c86e7dc66da4ca898a168c7d362c90175eb03581a44a6dfbdb5ac7cd8"
+                alt="Resume"
+                class="pixel-icon"
+              />
+              Resume
+            </a>
+            <a class="social pixel-button" href="https://github.com/PAdrianM">
+              <img
+                src="https://i.pinimgproxy.com/?url=aHR0cHM6Ly9jZG4taWNvbnMtcG5nLmZsYXRpY29uLmNvbS8yNTYvMjUvMjU2NTcucG5n&ts=1747427643&sig=7630716776968bbe2b1039c4e5d8f886633db85337867559d937bd3a8e0ae08a"
+                alt="GitHub"
+                class="pixel-icon"
+              />
+              Github
+            </a>
+          </div>
+          <!-- Columna Derecha -->
+          <div class="column-right">
+            <a
+              class="social pixel-button"
+              href="https://www.linkedin.com/in/adrián-garcía-486613317"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/256/3536/3536569.png"
+                alt="LinkedIn"
+                class="pixel-icon"
+              />
+              LinkedIn
+            </a>
+            <a class="social pixel-button" href="mailto:tuemail@gmail.com">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/281/281769.png"
+                alt="Gmail"
+                class="pixel-icon"
+              />
+              Gmail
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -50,10 +89,7 @@
     <!-- container -->
     <div class="container-fluid">
       <div class="row">
-        <!-- Columna invisible que solo ocupa espacio -->
-        <div class="col-auto d-none d-lg-block" style="width: 400px"></div>
-
-        <div class="col center-container" style="min-height: 100vh">
+        <div class="col center-container">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <ul class="nav">
               <li class="nav-item">
@@ -71,163 +107,169 @@
             </ul>
           </nav>
           <!-- about-me -->
-          <div class="about-me">
-            <h2 class="subtitle">About Me</h2>
-            <p class="resume-text">
-              I'm passionate about programming and have been developing software
-              for over three years. <br />
-              My main goals as a developer are: modernization, continuous
-              improvement, staying up-to-date with current technologies, and
-              clean code.
-            </p>
-            <div class="about-me-buttons">
-              <a class="social" href="a">Gmail</a>
-              <a class="social" href="a">LinkedIn</a>
-              <a class="social" href="a">Github</a>
-              <a class="social" href="a">Resume</a>
-            </div>
-          </div>
-
-          <!-- my-skills -->
-          <div class="my-skills">
-            <h2 class="subtitle">Skills</h2>
-            <ol>
-              <li>Swift</li>
-              <li>Kotlin</li>
-              <li>Jetpack Compose</li>
-              <li>SwiftUi</li>
-              <li>Java</li>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>Node.js</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ol>
-          </div>
-
-          <hr />
-
-          <!-- projects-container -->
-          <div class="project-container">
-            <h2 class="subtitle">Projects</h2>
-            <div class="project-1">
-              <img
-                src="./assets/images/probisional.jpg"
-                alt="Project 1"
-                width="300"
-                height="200"
-              />
-              <h3>Project 1</h3>
+          <div class="content-wrapper">
+            <div class="about-me">
+              <h2 class="subtitle">About Me</h2>
               <p class="resume-text">
-                This project is a mobile application that allows users to track
-                their daily tasks and manage their time effectively.
+                I'm passionate about programming and have been developing
+                software for over three years. <br />
+                My main goals as a developer are: modernization, continuous
+                improvement, staying up-to-date with current technologies, and
+                clean code.
               </p>
+              <div class="about-me-buttons">
+                <a class="social" href="a">Gmail</a>
+                <a class="social" href="a">LinkedIn</a>
+                <a class="social" href="a">Github</a>
+                <a class="social" href="a">Resume</a>
+              </div>
             </div>
 
-            <div class="projct-2">
-              <img
-                src="./assets/images/probisional.jpg"
-                alt="Project 2"
-                width="300"
-                height="200"
-              />
-              <h3>Project 2</h3>
-              <p class="resume-text">
-                This project is a web application that provides a platform for
-                users to share their thoughts and ideas with others.
-              </p>
-            </div>
-
-            <div class="projct-3">
-              <img
-                src="./assets/images/probisional.jpg"
-                alt="Project 3"
-                width="300"
-                height="200"
-              />
-              <h3>Project 3</h3>
-              <p class="resume-text">
-                This project is a mobile application that helps users learn new
-                languages through interactive lessons and quizzes.
-              </p>
-            </div>
-
-            <div class="projct-4">
-              <img
-                src="./assets/images/probisional.jpg"
-                alt="Project 4"
-                width="300"
-                height="200"
-              />
-              <h3>Project 4</h3>
-              <p class="resume-text">
-                This project is a web application that allows users to create
-                and manage their own blogs.
-              </p>
-            </div>
-          </div>
-
-          <hr />
-
-          <!-- credential-container -->
-          <div class="credential-container">
-            <h2 class="subtitle">Credentials</h2>
-
-            <div class="education">
-              <h3 class="subtitle">Education</h3>
-              <p class="resume-text">
-                Bachelor of Science in Computer Systems, Online Technological
-                University (UTEL), (2024-2026)
-              </p>
-            </div>
-
-            <div class="education">
-              <h3 class="subtitle">Education</h3>
-              <p class="resume-text">
-                Science and systems engineering, University of San Carlos de
-                Guatemala, (2021-2023)
-              </p>
+            <!-- my-skills -->
+            <div class="my-skills">
+              <h2 class="subtitle">Skills</h2>
+              <ol>
+                <li>Swift</li>
+                <li>Kotlin</li>
+                <li>Jetpack Compose</li>
+                <li>SwiftUi</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ol>
             </div>
 
             <hr />
 
-            <!-- work-experience -->
-            <div class="work-experience">
-              <h2 class="subtitle">Experience</h2>
-              <h3>Mobile Software Engineer, Digital Geko, (2023-Present)</h3>
-              <p class="resume-text">
-                Responsible for developing native Android and iOS applications,
-                collaborating with cross-functional teams to deliver new
-                features, ensuring code quality through unit testing, and
-                implementing security enhancements to improve overall
-                application reliability.
-              </p>
-            </div>
-            <hr />
-            <!-- certifications-container -->
-            <div class="certifications-container">
-              <h2 class="subtitle">Certifications / Accomplishments</h2>
-              <ul>
-                <li>
-                  Oracle Data Base Administrator Certificate, INTECAP, (2020)
-                </li>
-                <li>Beginner Android Developer, INTECAP, (2021)</li>
-                <li>iOS Developer, Geko Digital, (2023)</li>
-                <li>Kotlin and Jetpack Compose Developer, Udemy, (2024)</li>
-              </ul>
+            <!-- projects-container -->
+            <div class="project-container">
+              <h2 class="subtitle">Projects</h2>
+              <div class="project-1">
+                <img
+                  src="./assets/images/probisional.jpg"
+                  alt="Project 1"
+                  width="300"
+                  height="200"
+                />
+                <h3>Project 1</h3>
+                <p class="resume-text">
+                  This project is a mobile application that allows users to
+                  track their daily tasks and manage their time effectively.
+                </p>
+              </div>
+
+              <div class="projct-2">
+                <img
+                  src="./assets/images/probisional.jpg"
+                  alt="Project 2"
+                  width="300"
+                  height="200"
+                />
+                <h3>Project 2</h3>
+                <p class="resume-text">
+                  This project is a web application that provides a platform for
+                  users to share their thoughts and ideas with others.
+                </p>
+              </div>
+
+              <div class="projct-3">
+                <img
+                  src="./assets/images/probisional.jpg"
+                  alt="Project 3"
+                  width="300"
+                  height="200"
+                />
+                <h3>Project 3</h3>
+                <p class="resume-text">
+                  This project is a mobile application that helps users learn
+                  new languages through interactive lessons and quizzes.
+                </p>
+              </div>
+
+              <div class="projct-4">
+                <img
+                  src="./assets/images/probisional.jpg"
+                  alt="Project 4"
+                  width="300"
+                  height="200"
+                />
+                <h3>Project 4</h3>
+                <p class="resume-text">
+                  This project is a web application that allows users to create
+                  and manage their own blogs.
+                </p>
+              </div>
             </div>
 
             <hr />
-          </div>
 
-          <!-- bottom-container -->
-          <div class="bottom-container">
-            <footer>
-              <p class="copyright">© 2025 Adrian</p>
-            </footer>
+            <!-- credential-container -->
+            <div class="credential-container">
+              <h2 class="subtitle">Credentials</h2>
+
+              <div class="education">
+                <h3 class="subtitle">Education</h3>
+                <p class="resume-text">
+                  Bachelor of Science in Computer Systems, Online Technological
+                  University (UTEL), (2024-2026)
+                </p>
+              </div>
+
+              <div class="education">
+                <h3 class="subtitle">Education</h3>
+                <p class="resume-text">
+                  Science and systems engineering, University of San Carlos de
+                  Guatemala, (2021-2023)
+                </p>
+              </div>
+
+              <hr />
+
+              <!-- work-experience -->
+              <div class="work-experience">
+                <h2 class="subtitle">Experience</h2>
+                <h3>Mobile Software Engineer, Digital Geko, (2023-Present)</h3>
+                <p class="resume-text">
+                  Responsible for developing native Android and iOS
+                  applications, collaborating with cross-functional teams to
+                  deliver new features, ensuring code quality through unit
+                  testing, and implementing security enhancements to improve
+                  overall application reliability.
+                </p>
+              </div>
+              <hr />
+              <!-- certifications-container -->
+              <div class="certifications-container">
+                <h2 class="subtitle">Certifications / Accomplishments</h2>
+                <ul>
+                  <li>
+                    Oracle Data Base Administrator Certificate, INTECAP, (2020)
+                  </li>
+                  <li>Beginner Android Developer, INTECAP, (2021)</li>
+                  <li>iOS Developer, Geko Digital, (2023)</li>
+                  <li>Kotlin and Jetpack Compose Developer, Udemy, (2024)</li>
+                </ul>
+              </div>
+
+              <hr />
+            </div>
+
+            <!-- bottom-container -->
+            <div class="bottom-container">
+              <footer>
+                <p class="copyright">© 2025 Adrian</p>
+              </footer>
+            </div>
           </div>
+          <!-- content-wrapper -->
         </div>
+        <!-- col center-container -->
       </div>
+      <!-- row -->
     </div>
+    <!-- container-fluid -->
   </body>
 </html>
