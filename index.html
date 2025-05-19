@@ -17,6 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
 
   <body>
@@ -34,9 +38,9 @@
         <h1 class="title-name">Adrian Garcia</h1>
         <h2 class="subtitle">Software Engineer</h2>
         <p class="resume-text">
-          Code lover & problem solver. I build web apps with clean architecture
-          and smooth UX. Always tinkering with new tech to make things faster
-          and smarter.
+          Code lover & problem solver. I build web apps and native apps with
+          clean architecture and smooth UX. Always tinkering with new tech to
+          make things faster and smarter.
         </p>
 
         <h2 class="subtitle">Contact Me</h2>
@@ -45,7 +49,7 @@
           <div class="column-left">
             <a class="social pixel-button" href="a">
               <img
-                src="https://i.pinimgproxy.com/?url=aHR0cHM6Ly9jZG4taWNvbnMtcG5nLmZsYXRpY29uLmNvbS8yNTYvOTA5LzkwOTI2My5wbmc=&ts=1747427694&sig=8ee71c9c86e7dc66da4ca898a168c7d362c90175eb03581a44a6dfbdb5ac7cd8"
+                src="./assets/icons/ic-resume.svg"
                 alt="Resume"
                 class="pixel-icon"
               />
@@ -53,7 +57,7 @@
             </a>
             <a class="social pixel-button" href="https://github.com/PAdrianM">
               <img
-                src="https://i.pinimgproxy.com/?url=aHR0cHM6Ly9jZG4taWNvbnMtcG5nLmZsYXRpY29uLmNvbS8yNTYvMjUvMjU2NTcucG5n&ts=1747427643&sig=7630716776968bbe2b1039c4e5d8f886633db85337867559d937bd3a8e0ae08a"
+                src="./assets/icons/ic-github.svg"
                 alt="GitHub"
                 class="pixel-icon"
               />
@@ -67,7 +71,7 @@
               href="https://www.linkedin.com/in/adrián-garcía-486613317"
             >
               <img
-                src="https://cdn-icons-png.flaticon.com/256/3536/3536569.png"
+                src="./assets/icons/ic-linkedin.svg"
                 alt="LinkedIn"
                 class="pixel-icon"
               />
@@ -75,7 +79,7 @@
             </a>
             <a class="social pixel-button" href="mailto:tuemail@gmail.com">
               <img
-                src="https://cdn-icons-png.flaticon.com/512/281/281769.png"
+                src="./assets/icons/ic-gmail.svg"
                 alt="Gmail"
                 class="pixel-icon"
               />
@@ -108,44 +112,105 @@
           </nav>
           <!-- about-me -->
           <div class="content-wrapper">
-            <div class="about-me">
+            <div class="card-container">
               <h2 class="subtitle">About Me</h2>
               <p class="resume-text">
-                I'm passionate about programming and have been developing
-                software for over three years. <br />
-                My main goals as a developer are: modernization, continuous
-                improvement, staying up-to-date with current technologies, and
-                clean code.
+                I’m a results-driven Mobile and Web Developer with over three
+                years of experience crafting scalable, secure, and responsive
+                solutions using MVVM, CI/CD pipelines, and PWA standards.
+                Skilled in Kotlin, Java, Swift, HTML5, CSS3, Bootstrap, and
+                modern JavaScript frameworks, I leverage containerization,
+                automated testing, and performance optimization to deliver
+                seamless user experiences. By championing DevOps collaboration,
+                API‑first design, and continuous integration, I ensure robust,
+                maintainable code that aligns with corporate objectives and
+                industry best practices.
               </p>
               <div class="about-me-buttons">
-                <a class="social" href="a">Gmail</a>
-                <a class="social" href="a">LinkedIn</a>
-                <a class="social" href="a">Github</a>
-                <a class="social" href="a">Resume</a>
+                <a class="social pixel-button" href="a">
+                  <img
+                    src="./assets/icons/ic-gmail.svg"
+                    alt="Gmail"
+                    class="pixel-icon"
+                  />
+                  aismaelgarcia@gmail.com</a
+                >
+                <a
+                  class="social pixel-button"
+                  href="https://www.linkedin.com/in/adrián-garcía-486613317"
+                >
+                  <img
+                    src="./assets/icons/ic-linkedin.svg"
+                    alt="LinkedIn"
+                    class="pixel-icon"
+                  />
+                  LinkedIn</a
+                >
+                <a
+                  class="social pixel-button"
+                  href="https://github.com/PAdrianM"
+                >
+                  <img
+                    src="./assets/icons/ic-github.svg"
+                    alt="GitHub"
+                    class="pixel-icon"
+                  />
+                  Github</a
+                >
+                <a class="social pixel-button" href="a">
+                  <img
+                    src="./assets/icons/ic-resume.svg"
+                    alt="Resume"
+                    class="pixel-icon"
+                  />
+                  Resume</a
+                >
               </div>
             </div>
 
             <!-- my-skills -->
-            <div class="my-skills">
+            <div class="card-container">
               <h2 class="subtitle">Skills</h2>
-              <ol>
-                <li>Swift</li>
-                <li>Kotlin</li>
-                <li>Jetpack Compose</li>
-                <li>SwiftUi</li>
-                <li>Java</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>HTML</li>
-                <li>CSS</li>
-              </ol>
+              <h3>Programming languages</h3>
+              <div class="skills-container">
+                <ul class="skills">
+                  <li><i class="fab fa-java"></i> Java</li>
+                  <li><i class="fab fa-swift"></i> Swift</li>
+                  <li><i class="fab fa-android"></i> Kotlin</li>
+                  <li><i class="fab fa-js"></i> JavaScript</li>
+                  <li><i class="fab fa-node-js"></i> Node.js</li>
+                  <li><i class="fab fa-html5"></i> HTML</li>
+                  <li><i class="fab fa-css3-alt"></i> CSS</li>
+                </ul>
+              </div>
+              <h3>Frameworks & Libraries</h3>
+              <div class="skills-container">
+                <ul class="skills">
+                  <li><i class="fab fa-swift"></i> SwiftUI</li>
+                  <li><i class="fas fa-mobile-alt"></i> Jetpack Compose</li>
+                  <li><i class="fab fa-react"></i> React</li>
+                  <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+                </ul>
+              </div>
+              <h3>Technologies</h3>
+              <div class="skills-container">
+                <ul class="skills">
+                  <li><i class="fab fa-git-alt"></i> Git</li>
+                  <li><i class="fab fa-github"></i> GitHub</li>
+                  <li><i class="fab fa-bitbucket"></i> Bitbucket</li>
+                  <li><i class="fab fa-jira"></i> Jira</li>
+                  <li><i class="fas fa-code"></i> REST APIs</li>
+                  <li><i class="fas fa-database"></i> MySQL</li>
+                  <li><i class="fas fa-database"></i> SQLite</li>
+                  <li><i class="fas fa-database"></i> Oracle</li>
+                </ul>
+              </div>
             </div>
 
             <hr />
 
             <!-- projects-container -->
-            <div class="project-container">
+            <div class="card-container">
               <h2 class="subtitle">Projects</h2>
               <div class="project-1">
                 <img
@@ -207,7 +272,7 @@
             <hr />
 
             <!-- credential-container -->
-            <div class="credential-container">
+            <div class="card-container">
               <h2 class="subtitle">Credentials</h2>
 
               <div class="education">
@@ -229,7 +294,7 @@
               <hr />
 
               <!-- work-experience -->
-              <div class="work-experience">
+              <div class="card-container">
                 <h2 class="subtitle">Experience</h2>
                 <h3>Mobile Software Engineer, Digital Geko, (2023-Present)</h3>
                 <p class="resume-text">
@@ -242,7 +307,7 @@
               </div>
               <hr />
               <!-- certifications-container -->
-              <div class="certifications-container">
+              <div class="card-container">
                 <h2 class="subtitle">Certifications / Accomplishments</h2>
                 <ul>
                   <li>
