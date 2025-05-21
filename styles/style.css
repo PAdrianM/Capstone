@@ -4,6 +4,10 @@ body {
   overflow-x: hidden; /* Previene scroll horizontal */
 }
 
+#about, #skills, #projects, #experience {
+  scroll-margin-top: 70px;
+}
+
 /* Estilos base para ambos contenedores */
 .center-container,
 .lateral-container {
