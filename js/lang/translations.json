@@ -1,0 +1,148 @@
+{
+  "en": {
+    "nav": {
+      "about": "About",
+      "skills": "Skills",
+      "projects": "Projects",
+      "experience": "Experience"
+    },
+    "about": {
+      "title": "About Me",
+      "description": "I'm a results-driven Mobile and Web Developer with over three years of experience crafting scalable, secure, and responsive solutions using MVVM, CI/CD pipelines, and PWA standards. Skilled in Kotlin, Java, Swift, HTML5, CSS3, Bootstrap, and modern JavaScript frameworks, I leverage containerization, automated testing, and performance optimization to deliver seamless user experiences."
+    },
+    "profile": {
+      "title": "Adrian Garcia",
+      "subtitle": "Software Engineer",
+      "description": "Code lover & problem solver. I build web apps and native apps with clean architecture and smooth UX. Always tinkering with new tech to make things faster and smarter.",
+      "contact": "Contact Me"
+    },
+    "skills": {
+      "title": "Skills",
+      "programming": "Programming languages",
+      "frameworks": "Frameworks & Libraries",
+      "technologies": "Technologies"
+    },
+    "projects": {
+      "title": "Projects",
+      "project1": {
+        "title": "Security App for Promerica",
+        "description": "Security application with biometric authentication to enhance banking security."
+      },
+      "project2": {
+        "title": "Task Manager Pro",
+        "description": "Modern web application for task management with real-time synchronization."
+      },
+      "project3": {
+        "title": "Language Learning Platform",
+        "description": "Mobile platform for language learning with interactive lessons and gamification."
+      },
+      "project4": {
+        "title": "Modern Blog Platform",
+        "description": "Blogging platform with advanced editor and real-time comment system."
+      },
+      "back": "Back to Projects",
+      "details": "See details"
+    },
+    "credentials": {
+      "title": "Credentials",
+      "experience": {
+        "title": "Experience",
+        "job1": {
+          "position": "Mobile Software Engineer, Digital Geko, (2023-Present)",
+          "description": "Responsible for developing native Android and iOS applications, collaborating with cross-functional teams to deliver new features, ensuring code quality through unit testing, and implementing security enhancements."
+        }
+      },
+      "education": {
+        "title": "Education",
+        "degree1": {
+          "title": "Bachelor of Science in Computer Systems (2024-Present)",
+          "description": "Online Technological University (UTEL), Faculty of Engineering, International certificate as a systems engineer"
+        }
+      },
+      "certifications": {
+        "title": "Certifications",
+        "cert1": {
+          "title": "Oracle Database Administrator Certificate, INTECAP (2020)",
+          "description": "Demonstrates proficiency in installing, configuring and maintaining Oracle Database environments."
+        },
+        "cert2": {
+          "title": "Beginner Android Developer, INTECAP (2021)",
+          "description": "Covers core Android fundamentals such as activity lifecycle, UI layouts, and data storage."
+        }
+      }
+    }
+  },
+  "es": {
+    "nav": {
+      "about": "Acerca de mí",
+      "skills": "Habilidades",
+      "projects": "Proyectos",
+      "experience": "Experiencia"
+    },
+    "about": {
+      "title": "Acerca de mí",
+      "description": "Soy un Desarrollador Móvil y Web orientado a resultados con más de tres años de experiencia creando soluciones escalables, seguras y responsivas utilizando MVVM, pipelines CI/CD y estándares PWA. Con habilidades en Kotlin, Java, Swift, HTML5, CSS3, Bootstrap y frameworks modernos de JavaScript, aprovecho la containerización, pruebas automatizadas y optimización de rendimiento para ofrecer experiencias de usuario perfectas."
+    },
+    "profile": {
+      "title": "Adrian Garcia",
+      "subtitle": "Ingeniero de Software",
+      "description": "Amante del código y solucionador de problemas. Construyo aplicaciones web y nativas con arquitectura limpia y UX fluida. Siempre experimentando con nuevas tecnologías para hacer las cosas más rápidas e inteligentes.",
+      "contact": "Contáctame"
+    },
+    "skills": {
+      "title": "Habilidades",
+      "programming": "Lenguajes de programación",
+      "frameworks": "Frameworks y Librerías",
+      "technologies": "Tecnologías"
+    },
+    "projects": {
+      "title": "Proyectos",
+      "project1": {
+        "title": "App de Seguridad para Promerica",
+        "description": "Aplicación de seguridad con autenticación biométrica para reforzar la seguridad bancaria."
+      },
+      "project2": {
+        "title": "Gestor de Tareas Pro",
+        "description": "Aplicación web moderna para gestión de tareas con sincronización en tiempo real."
+      },
+      "project3": {
+        "title": "Plataforma de Aprendizaje de Idiomas",
+        "description": "Plataforma móvil para aprendizaje de idiomas con lecciones interactivas y gamificación."
+      },
+      "project4": {
+        "title": "Plataforma Moderna de Blog",
+        "description": "Plataforma de blogging con editor avanzado y sistema de comentarios en tiempo real."
+      },
+      "back": "Volver a Proyectos",
+      "details": "Ver detalles"
+    },
+    "credentials": {
+      "title": "Credenciales",
+      "experience": {
+        "title": "Experiencia",
+        "job1": {
+          "position": "Ingeniero de Software Móvil, Digital Geko, (2023-Presente)",
+          "description": "Responsable del desarrollo de aplicaciones nativas para Android e iOS, colaborando con equipos multifuncionales para entregar nuevas características, asegurando la calidad del código mediante pruebas unitarias e implementando mejoras de seguridad."
+        }
+      },
+      "education": {
+        "title": "Educación",
+        "degree1": {
+          "title": "Licenciatura en Sistemas Informáticos (2024-Presente)",
+          "description": "Universidad Tecnológica en Línea (UTEL), Facultad de Ingeniería, Certificado internacional como ingeniero de sistemas"
+        }
+      },
+      "certifications": {
+        "title": "Certificaciones",
+        "cert1": {
+          "title": "Certificado de Administrador de Base de Datos Oracle, INTECAP (2020)",
+          "description": "Demuestra competencia en la instalación, configuración y mantenimiento de entornos de Base de Datos Oracle."
+        },
+        "cert2": {
+          "title": "Desarrollador Android Principiante, INTECAP (2021)",
+          "description": "Cubre los fundamentos básicos de Android como el ciclo de vida de actividades, layouts de UI y almacenamiento de datos."
+        }
+      }
+    }
+  }
+}

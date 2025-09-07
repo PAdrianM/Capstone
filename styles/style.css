@@ -1,14 +1,16 @@
+/* ========== MAIN PORTFOLIO STYLES ========== */
+
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Previene scroll horizontal */
+  overflow-x: hidden;
 }
 
 #about, #skills, #projects, #experience {
   scroll-margin-top: 70px;
 }
 
-/* Estilos base para ambos contenedores */
+/* ========== CONTENEDORES BASE ========== */
 .center-container,
 .lateral-container {
   border: 2px solid black;
@@ -17,23 +19,23 @@ body {
   font-family: "Jersey 15", sans-serif;
   font-weight: 400;
   font-style: normal;
-  margin: 12px; /* Márgenes uniformes */
+  margin: 12px;
 }
 
-/* Mobile First (≤760px) */
 .lateral-container {
   padding: 16px 16px !important;
 }
 
+/* ========== PERFIL Y SIDEBAR ========== */
 .profile-image {
-  width: 84%; /* Ahora ocupará el 100% del contenedor .underlined-image */
+  width: 84%;
   border-radius: 4px;
-  padding: 16px 16px; /* Solo padding vertical */
-  display: block; /* Elimina espacio fantasma debajo de la imagen */
+  padding: 16px 16px;
+  display: block;
 }
 
 .underlined-image {
-  width: 100%; /* 100% - (12px + 12px) */
+  width: 100%;
   border: 2px solid #4783f1;
   margin: 0;
   padding: 0;
@@ -42,9 +44,10 @@ body {
 .resume {
   width: 100%;
   height: 82%;
-  padding: 16px 16px; /* Solo padding vertical */
+  padding: 16px 16px;
 }
 
+/* ========== TIPOGRAFÍA ========== */
 .title-name {
   font-size: 48px;
   font-weight: 500;
@@ -73,19 +76,18 @@ p {
   font-weight: 400;
 }
 
-/* Contenedor principal con distribución en 2 columnas */
+/* ========== BOTONES PIXEL ART ========== */
 .pixel-art-container {
   background-color: #4783f1;
   border: 4px solid #000;
   padding: 15px;
   box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.3);
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
-  max-width: 500px; /* Ajusta según necesidad */
+  max-width: 500px;
 }
 
-/* Botones con nuevo hover y alineación */
 .pixel-button {
   display: flex;
   align-items: center;
@@ -97,17 +99,16 @@ p {
   border: 3px solid #000;
   font-family: "Jersey 15", sans-serif;
   transition: all 0.2s;
-  margin: 0; /* Eliminamos el margin para mejor control */
+  margin: 0;
+  cursor: pointer;
 }
 
-/* Efecto hover - Azul vibrante que complementa */
 .pixel-button:hover {
-  background-color: #3a6bc8; /* Tonos de tu azul principal */
+  background-color: #3a6bc8;
   transform: translate(-2px, -2px);
   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
 }
 
-/* Estilo de los iconos */
 .pixel-icon {
   width: 24px;
   height: 24px;
@@ -122,20 +123,19 @@ p {
   gap: 10px;
 }
 
-/* Efecto "presionado" */
 .pixel-button:active {
   transform: translate(0, 0);
   box-shadow: none;
 }
 
-/* ajuste para tarjeta de contenedora */
+/* ========== TARJETAS PRINCIPALES ========== */
 .card-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
   border: 2px solid #3a6bc8;
-  padding: 32px 32px; /* Solo padding vertical */
+  padding: 32px 32px;
   margin-bottom: 16px;
 }
 
@@ -151,7 +151,7 @@ p {
   max-width: fit-content;
 }
 
-/* ajuste para contenedor de skills */
+/* ========== SKILLS ========== */
 .skills-container {
   padding: 12px 0px;
 }
@@ -173,27 +173,25 @@ p {
   text-align: center;
   border: 3px solid black;
   padding: 8px 16px;
-  background-color: #506182; /* Consistente con tus botones */
-  color: white; /* Mejor contraste */
+  background-color: #506182;
+  color: white;
   transition: all 0.2s;
 }
 
 .skills li:hover {
-  background-color: #3a6bc8; /* Igual que tus botones */
+  background-color: #3a6bc8;
   transform: translate(-2px, -2px);
   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
 }
 
-/* ajustes para el contenedor de credenciales */
-
+/* ========== CREDENCIALES ========== */
 .credentials-flex-container {
   display: flex;
-  flex-direction: column; /* Apiladas verticalmente para móviles */
+  flex-direction: column;
   gap: 16px;
   width: 100%;
 }
 
-/* Columna izquierda (Education y Experience) */
 .left-credentials-column {
   flex: 1;
   display: flex;
@@ -201,12 +199,10 @@ p {
   gap: 16px;
 }
 
-/* Columna derecha (Certifications) */
 .right-credentials-column {
   margin-top: 16px;
 }
 
-/* Ajuste para los card-container dentro de las columnas */
 .left-credentials-column > .card-container {
   border-color: black;
   margin-bottom: 0;
@@ -236,9 +232,7 @@ p {
   word-wrap: break-word;
 }
 
-/* ajustes al contenedor de proyectos */
-
-/* Estilos base para contenedor de proyectos (móvil primero) */
+/* ========== PROYECTOS PRINCIPALES ========== */
 .projects-container {
   display: flex;
   flex-direction: column;
@@ -246,7 +240,6 @@ p {
   width: 100%;
 }
 
-/* Estilo para cada proyecto individual */
 .project-container {
   display: flex;
   flex-direction: column;
@@ -254,9 +247,9 @@ p {
   border: 2px solid black;
   padding: 16px;
   transition: all 0.2s;
+  cursor: pointer;
 }
 
-/* Estilos para la imagen - versión móvil */
 .project-container img {
   width: 100%;
   height: 200px;
@@ -264,90 +257,72 @@ p {
   border: 1px solid #3a6bc8;
 }
 
-/* Contenedor de texto */
 .project-container .project-content {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-/* Efecto hover en los proyectos */
 .project-container:hover {
   transform: translate(-2px, -2px);
   box-shadow: 3px 3px 0px rgba(80, 97, 130);
 }
 
-/* Ajustar las imágenes para que sean responsivas */
-.project-container img {
-  width: 100%;
-  height: auto;
-  border: 1px solid #3a6bc8;
-  object-fit: cover;
-}
-
+/* ========== CONTENEDOR PRINCIPAL ========== */
 .center-container {
   width: calc(100% - 24px);
-  height: calc(100vh - 104px); /* Altura menos márgenes y navbar */
-  overflow-y: auto; /* Scroll interno */
+  height: calc(100vh - 104px);
+  overflow-y: auto;
 }
+
+/* ========== NAVEGACIÓN ========== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: white !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 8px 20px;
+}
+
+.nav-link {
+  font-size: 22px;
+  font-weight: 500;
+  color: #506182 !important;
+  padding: 8px 16px !important;
+  transition: all 0.2s ease;
+  border-radius: 2px;
+}
+
+.nav-link:hover {
+  color: #3a6bc8 !important;
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  color: #3a6bc8 !important;
+  border-bottom: 3px solid #3a6bc8;
+}
+
+.nav {
+  gap: 10px;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Mobile First (≤760px) - ya incluido arriba */
 
 /* Desktop (>760px) */
 @media (min-width: 761px) {
   body {
-    padding-left: 424px; /* 400px + 24px (12+12) */
+    padding-left: 424px;
   }
 
   .profile-image {
     width: 72%;
     height: auto;
     border-radius: 4px;
-    padding: 16px 16px; /* Solo padding vertical */
-  }
-
-  .lateral-container {
-    position: fixed;
-    top: 12px;
-    left: 12px;
-    bottom: 12px;
-    width: 376px; /* 400px - 24px (12+12) */
-    margin: 0;
-    padding: 12px;
-    overflow-y: auto;
-  }
-
-  .center-container {
-    margin: 12px 12px 12px 0;
-    width: auto;
-    height: calc(100vh - 24px); /* Altura menos márgenes */
-    min-height: auto;
-  }
-
-  /* Elimina espacio de la columna Bootstrap */
-  .d-none.d-lg-block {
-    display: none !important;
-  }
-
-  .credentials-flex-container {
-    flex-direction: row; /* Dos columnas lado a lado */
-    gap: 20px;
-  }
-
-  .right-credentials-column {
-    margin-top: 0; /* Eliminar el margen superior cuando están en fila */
-  }
-}
-
-/* Versión móvil (1 columna) */
-@media (max-width: 600px) {
-  .pixel-art-container {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Desktop (>1024px) - CAMBIAR de 761px a 1024px */
-@media (min-width: 1025px) {
-  body {
-    padding-left: 424px;
+    padding: 16px 16px;
   }
 
   .lateral-container {
@@ -368,7 +343,25 @@ p {
     min-height: auto;
   }
 
-  /* Dos columnas lado a lado */
+  .credentials-flex-container {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .right-credentials-column {
+    margin-top: 0;
+  }
+}
+
+/* Mobile (≤600px) */
+@media (max-width: 600px) {
+  .pixel-art-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Large Desktop (>1024px) */
+@media (min-width: 1025px) {
   .credentials-flex-container {
     justify-content: center;
   }
@@ -383,31 +376,6 @@ p {
     width: 48%;
   }
 
-  /* Diseño horizontal para proyectos */
-  /* .project-container {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  
-  .project-container img {
-    width: 48%;
-    max-width: none;
-    height: 400px;
-    object-fit: cover;
-    object-position: center;
-  } */
-
-  /* .project-container .project-content {
-    width: 48%;
-    padding-right: 8px;
-  } */
-
-  /* Mantener los proyectos en grid de 2 columnas */
-  /* .projects-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  } */
   .projects-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -415,9 +383,8 @@ p {
   }
 }
 
-/* Ajustes para tablet y móvil (≤1024px) */
+/* Tablet (≤1024px) */
 @media (max-width: 1024px) {
-  /* Forzar apilado vertical */
   .credentials-flex-container {
     flex-direction: column;
     gap: 16px;
@@ -427,52 +394,13 @@ p {
     margin-top: 16px;
   }
 
-  /* Asegurar que las columnas tengan ancho completo */
   .left-credentials-column,
   .right-credentials-column {
     max-width: 100%;
     width: 100%;
   }
 
-  /* Ajustar padding para más espacio */
   .card-container {
     padding: 16px;
   }
-}
-
-/* Ajustes para el navbar y contenido */
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: white !important; 
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
-  padding: 8px 20px;
-}
-
-/* Estilo de los enlaces del navbar */
-.nav-link {
-  font-size: 22px; 
-  font-weight: 500; 
-  color: #506182 !important; 
-  padding: 8px 16px !important;
-  transition: all 0.2s ease;
-  border-radius: 2px;
-}
-
-/* Efecto hover de los enlaces */
-.nav-link:hover {
-  color: #3a6bc8 !important; 
-  transform: translateY(-2px); /* Elevacion */
-}
-
-/* Estilo para enlace activo */
-.nav-link.active {
-  color: #3a6bc8 !important;
-  border-bottom: 3px solid #3a6bc8;
-}
-
-/* Ajustar espacio entre ítems del navbar */
-.nav {
-  gap: 10px;
 }

@@ -10,17 +10,41 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/style-detail.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <style>
+      .language-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+        background-color: #4783f1;
+        border: none;
+        transition: all 0.2s ease;
+      }
+      
+      .language-btn:hover {
+        background-color: #3a6bc8;
+      }
+      
+      .language-btn .pixel-icon {
+        margin-right: 5px;
+      }
+      
+      @media (max-width: 768px) {
+        .nav-item.ms-lg-auto {
+          margin-top: 10px;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -29,7 +53,7 @@
       <div class="underlined-image d-flex flex-column align-items-center">
         <img
           class="profile-image"
-          src="./assets/images/profile-2.jpg"
+          src="./assets/images/profile-3.jpeg"
           alt="Adrian Garcia"
         />
       </div>
@@ -45,44 +69,9 @@
 
         <h2 class="subtitle">Contact Me</h2>
         <div class="contact-me pixel-art-container">
-          <!-- Columna Izquierda -->
           <div class="column-left">
-            <a class="social pixel-button" href="a">
-              <svg
-                class="pixel-icon"
-                fill="#fff"
-                version="1.1"
-                id="Capa_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 0 45.057 45.057"
-                xml:space="preserve"
-                stroke="#fff"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <g>
-                    <g id="_x35_8_24_">
-                      <g>
-                        <path
-                          d="M19.558,25.389c-0.067,0.176-0.155,0.328-0.264,0.455c-0.108,0.129-0.24,0.229-0.396,0.301 c-0.156,0.072-0.347,0.107-0.57,0.107c-0.313,0-0.572-0.068-0.78-0.203c-0.208-0.137-0.374-0.316-0.498-0.541 c-0.124-0.223-0.214-0.477-0.27-0.756c-0.057-0.279-0.084-0.564-0.084-0.852c0-0.289,0.027-0.572,0.084-0.853 c0.056-0.281,0.146-0.533,0.27-0.756c0.124-0.225,0.29-0.404,0.498-0.541c0.208-0.137,0.468-0.203,0.78-0.203 c0.271,0,0.494,0.051,0.666,0.154c0.172,0.105,0.31,0.225,0.414,0.361c0.104,0.137,0.176,0.273,0.216,0.414 c0.04,0.139,0.068,0.25,0.084,0.33h2.568c-0.112-1.08-0.49-1.914-1.135-2.502c-0.644-0.588-1.558-0.887-2.741-0.895 c-0.664,0-1.263,0.107-1.794,0.324c-0.532,0.215-0.988,0.52-1.368,0.912c-0.38,0.392-0.672,0.863-0.876,1.416 c-0.204,0.551-0.307,1.165-0.307,1.836c0,0.631,0.097,1.223,0.288,1.77c0.192,0.549,0.475,1.021,0.847,1.422 s0.825,0.717,1.361,0.949c0.536,0.23,1.152,0.348,1.849,0.348c0.624,0,1.18-0.105,1.668-0.312 c0.487-0.209,0.897-0.482,1.229-0.822s0.584-0.723,0.756-1.146c0.172-0.422,0.259-0.852,0.259-1.283h-2.593 C19.68,25.023,19.627,25.214,19.558,25.389z"
-                        ></path>
-                        <polygon
-                          points="26.62,24.812 26.596,24.812 25.192,19.616 22.528,19.616 25.084,28.184 28.036,28.184 30.713,19.616 28,19.616 "
-                        ></polygon>
-                        <path
-                          d="M33.431,0H5.179v45.057h34.699V6.251L33.431,0z M36.878,42.056H8.179V3h23.706v4.76h4.992L36.878,42.056L36.878,42.056z"
-                        ></path>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </svg>
+            <a class="social pixel-button" href="#resume">
+              <i class="fas fa-file-alt pixel-icon"></i>
               Resume
             </a>
             <a
@@ -91,15 +80,10 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src="./assets/icons/ic-github.svg"
-                alt="GitHub"
-                class="pixel-icon"
-              />
+              <i class="fab fa-github pixel-icon"></i>
               Github
             </a>
           </div>
-          <!-- Columna Derecha -->
           <div class="column-right">
             <a
               class="social pixel-button"
@@ -107,22 +91,14 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src="./assets/icons/ic-linkedin.svg"
-                alt="LinkedIn"
-                class="pixel-icon"
-              />
+              <i class="fab fa-linkedin pixel-icon"></i>
               LinkedIn
             </a>
             <a
               class="social pixel-button"
-              href="mailto:aismaelgarcia@gmail.com?subject=Interesado%20en%20tu%20CV&body=Hola%20Adrian%2C%0A%0AMe%20gustaría%20saber%20más%20sobre%20tu%20experiencia."
+              href="mailto:aismaelgarcia@gmail.com?subject=Interesado%20en%20tu%20CV"
             >
-              <img
-                src="./assets/icons/ic-gmail.svg"
-                alt="Gmail"
-                class="pixel-icon"
-              />
+              <i class="fas fa-envelope pixel-icon"></i>
               Gmail
             </a>
           </div>
@@ -148,100 +124,53 @@
               <li class="nav-item">
                 <a class="nav-link" href="#experience">Experience</a>
               </li>
+              <li class="nav-item ms-lg-auto">
+                <button id="language-toggle" class="pixel-button language-btn">
+                  <i class="fas fa-language pixel-icon"></i>
+                  <span id="lang-text">ES</span>
+                </button>
+              </li>
             </ul>
           </nav>
-          <!-- about-me -->
-          <div id="about" class="content-wrapper">
-            <div class="card-container">
+
+          <!-- Main Content -->
+          <div id="main-content" class="content-wrapper">
+            <!-- about-me -->
+            <div id="about" class="card-container">
               <h2 class="subtitle">About Me</h2>
               <p class="resume-text">
-                I’m a results-driven Mobile and Web Developer with over three
+                I'm a results-driven Mobile and Web Developer with over three
                 years of experience crafting scalable, secure, and responsive
                 solutions using MVVM, CI/CD pipelines, and PWA standards.
                 Skilled in Kotlin, Java, Swift, HTML5, CSS3, Bootstrap, and
                 modern JavaScript frameworks, I leverage containerization,
                 automated testing, and performance optimization to deliver
-                seamless user experiences. By championing DevOps collaboration,
-                API‑first design, and continuous integration, I ensure robust,
-                maintainable code that aligns with corporate objectives and
-                industry best practices.
+                seamless user experiences.
               </p>
               <div class="about-me-buttons">
                 <a
                   class="social pixel-button"
-                  href="mailto:aismaelgarcia@gmail.com?subject=Interesado%20en%20tu%20CV&body=Hola%20Adrian%2C%0A%0AMe%20gustaría%20saber%20más%20sobre%20tu%20experiencia."
+                  href="mailto:aismaelgarcia@gmail.com"
                 >
-                  <img
-                    src="./assets/icons/ic-gmail.svg"
-                    alt="Gmail"
-                    class="pixel-icon"
-                  />
-                  aismaelgarcia@gmail.com</a
-                >
+                  <i class="fas fa-envelope pixel-icon"></i>
+                  aismaelgarcia@gmail.com
+                </a>
                 <a
                   class="social pixel-button"
                   href="https://www.linkedin.com/in/adrián-garcía-486613317"
                   target="_blank"
-                  rel="noopener noreferrer"
                 >
-                  <img
-                    src="./assets/icons/ic-linkedin.svg"
-                    alt="LinkedIn"
-                    class="pixel-icon"
-                  />
-                  LinkedIn</a
-                >
+                  <i class="fab fa-linkedin pixel-icon"></i>
+                  LinkedIn
+                </a>
                 <a
                   class="social pixel-button"
                   href="https://github.com/PAdrianM"
                   target="_blank"
-                  rel="noopener noreferrer"
                 >
-                  <img
-                    src="./assets/icons/ic-github.svg"
-                    alt="GitHub"
-                    class="pixel-icon"
-                  />
-                  Github</a
-                >
-                <a class="social pixel-button" href="a">
-                  <svg
-                    class="pixel-icon"
-                    fill="#fff"
-                    version="1.1"
-                    id="Capa_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 45.057 45.057"
-                    xml:space="preserve"
-                    stroke="#fff"
-                  >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <g>
-                        <g id="_x35_8_24_">
-                          <g>
-                            <path
-                              d="M19.558,25.389c-0.067,0.176-0.155,0.328-0.264,0.455c-0.108,0.129-0.24,0.229-0.396,0.301 c-0.156,0.072-0.347,0.107-0.57,0.107c-0.313,0-0.572-0.068-0.78-0.203c-0.208-0.137-0.374-0.316-0.498-0.541 c-0.124-0.223-0.214-0.477-0.27-0.756c-0.057-0.279-0.084-0.564-0.084-0.852c0-0.289,0.027-0.572,0.084-0.853 c0.056-0.281,0.146-0.533,0.27-0.756c0.124-0.225,0.29-0.404,0.498-0.541c0.208-0.137,0.468-0.203,0.78-0.203 c0.271,0,0.494,0.051,0.666,0.154c0.172,0.105,0.31,0.225,0.414,0.361c0.104,0.137,0.176,0.273,0.216,0.414 c0.04,0.139,0.068,0.25,0.084,0.33h2.568c-0.112-1.08-0.49-1.914-1.135-2.502c-0.644-0.588-1.558-0.887-2.741-0.895 c-0.664,0-1.263,0.107-1.794,0.324c-0.532,0.215-0.988,0.52-1.368,0.912c-0.38,0.392-0.672,0.863-0.876,1.416 c-0.204,0.551-0.307,1.165-0.307,1.836c0,0.631,0.097,1.223,0.288,1.77c0.192,0.549,0.475,1.021,0.847,1.422 s0.825,0.717,1.361,0.949c0.536,0.23,1.152,0.348,1.849,0.348c0.624,0,1.18-0.105,1.668-0.312 c0.487-0.209,0.897-0.482,1.229-0.822s0.584-0.723,0.756-1.146c0.172-0.422,0.259-0.852,0.259-1.283h-2.593 C19.68,25.023,19.627,25.214,19.558,25.389z"
-                            ></path>
-                            <polygon
-                              points="26.62,24.812 26.596,24.812 25.192,19.616 22.528,19.616 25.084,28.184 28.036,28.184 30.713,19.616 28,19.616 "
-                            ></polygon>
-                            <path
-                              d="M33.431,0H5.179v45.057h34.699V6.251L33.431,0z M36.878,42.056H8.179V3h23.706v4.76h4.992L36.878,42.056L36.878,42.056z"
-                            ></path>
-                          </g>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                  Resume</a
-                >
+                  <i class="fab fa-github pixel-icon"></i>
+                  Github
+                </a>
               </div>
             </div>
 
@@ -288,67 +217,54 @@
             <div id="projects" class="card-container">
               <h2 class="subtitle">Projects</h2>
               <div class="projects-container">
-                <div class="project-container">
+                <div class="project-container" onclick="showProjectDetail('security-app')">
                   <img
-                    src="./assets/images/probisional.jpg"
-                    alt="Project 1"
-                    width="300"
-                    height="200"
+                    src="https://via.placeholder.com/400x250/4783f1/ffffff?text=Security+App"
+                    alt="Security App for Promerica"
                   />
                   <div class="project-content">
-                    <h3>Project 1</h3>
+                    <h3>Security App for Promerica</h3>
                     <p class="resume-text">
-                      This project is a web application that allows users to
-                      manage their tasks and track their progress.
+                      Aplicación de seguridad con autenticación biométrica para reforzar la seguridad bancaria.
                     </p>
                   </div>
                 </div>
 
-                <div class="project-container">
+                <div class="project-container" onclick="showProjectDetail('task-manager')">
                   <img
-                    src="./assets/images/probisional.jpg"
-                    alt="Project 2"
-                    width="300"
-                    height="200"
+                    src="https://via.placeholder.com/400x250/506182/ffffff?text=Task+Manager"
+                    alt="Task Manager App"
                   />
                   <div class="project-content">
-                    <h3>Project 2</h3>
+                    <h3>Task Manager Pro</h3>
                     <p class="resume-text">
-                      This project is a web application that provides a platform
-                      for users to share their thoughts and ideas with others.
+                      Aplicación web moderna para gestión de tareas con sincronización en tiempo real.
                     </p>
                   </div>
                 </div>
 
-                <div class="project-container">
+                <div class="project-container" onclick="showProjectDetail('language-app')">
                   <img
-                    src="./assets/images/probisional.jpg"
-                    alt="Project 3"
-                    width="300"
-                    height="200"
+                    src="https://via.placeholder.com/400x250/3a6bc8/ffffff?text=Language+App"
+                    alt="Language Learning App"
                   />
                   <div class="project-content">
-                    <h3>Project 3</h3>
+                    <h3>Language Learning Platform</h3>
                     <p class="resume-text">
-                      This project is a mobile application that helps users
-                      learn new languages through interactive lessons and
-                      quizzes.
+                      Plataforma móvil para aprendizaje de idiomas con lecciones interactivas y gamificación.
                     </p>
                   </div>
                 </div>
 
-                <div class="project-container">
+                <div class="project-container" onclick="showProjectDetail('blog-platform')">
                   <img
-                    src="./assets/images/probisional.jpg"
-                    alt="Project 4"
-                    width="300"
-                    height="200"
+                    src="https://via.placeholder.com/400x250/6c757d/ffffff?text=Blog+Platform"
+                    alt="Blog Platform"
                   />
                   <div class="project-content">
-                    <h3>Project 4</h3>
+                    <h3>Modern Blog Platform</h3>
                     <p class="resume-text">
-                      This project is a web application that allows users to
-                      create and manage their own blogs.
+                      Plataforma de blogging con editor avanzado y sistema de comentarios en tiempo real.
                     </p>
                   </div>
                 </div>
@@ -359,9 +275,7 @@
             <div id="experience" class="card-container">
               <h2 class="subtitle">Credentials</h2>
               <div class="credentials-flex-container">
-                <!-- Columna izquierda -->
                 <div class="left-credentials-column">
-                  <!-- Experience -->
                   <div class="card-container">
                     <h2 class="subtitle">Experience</h2>
                     <h3>
@@ -371,11 +285,9 @@
                       Responsible for developing native Android and iOS
                       applications, collaborating with cross-functional teams to
                       deliver new features, ensuring code quality through unit
-                      testing, and implementing security enhancements to improve
-                      overall application reliability.
+                      testing, and implementing security enhancements.
                     </p>
                   </div>
-                  <!-- Education -->
                   <div class="card-container">
                     <div class="education">
                       <h2 class="subtitle">Education</h2>
@@ -389,77 +301,424 @@
                       </p>
                     </div>
                   </div>
-
-                  <div class="card-container">
-                    <div class="education">
-                      <h2 class="subtitle">Education</h2>
-                      <h3>Science and systems engineering (2020-2023)</h3>
-                      <p class="resume-text">
-                        University of San Carlos of Guatemala, Faculty of
-                        Engineering
-                      </p>
-                    </div>
-                  </div>
                 </div>
 
-                <!-- Columna derecha (Certifications) -->
                 <div class="right-credentials-column">
                   <div class="end-container-credentials">
                     <h2 class="subtitle">Certifications</h2>
-
                     <div class="certifications">
-                      <h3>
-                        Oracle Database Administrator Certificate, INTECAP
-                        (2020)
-                      </h3>
+                      <h3>Oracle Database Administrator Certificate, INTECAP (2020)</h3>
                       <p>
                         Demonstrates proficiency in installing, configuring and
-                        maintaining Oracle Database environments, including
-                        backup &amp; recovery strategies and performance tuning.
+                        maintaining Oracle Database environments.
                       </p>
-
                       <h3>Beginner Android Developer, INTECAP (2021)</h3>
                       <p>
                         Covers core Android fundamentals such as activity
-                        lifecycle, UI layouts, intents and basic data storage to
-                        build simple mobile applications.
-                      </p>
-
-                      <h3>iOS Developer, Geko Digital (2023)</h3>
-                      <p>
-                        Focuses on Swift programming, Xcode workflow and UIKit
-                        fundamentals to design and deploy native iOS
-                        applications.
-                      </p>
-
-                      <h3>
-                        Kotlin and Jetpack Compose Developer, Udemy (2024)
-                      </h3>
-                      <p>
-                        Covers modern Kotlin features and declarative UI with
-                        Jetpack Compose, including state management, navigation
-                        and MVVM architecture.
+                        lifecycle, UI layouts, and data storage.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- bottom-container -->
-            <div class="bottom-container">
-              <footer>
-                <p class="copyright">© 2025 Adrian</p>
-              </footer>
+          <!-- Project Detail Pages -->
+          <div id="project-detail-security-app" class="project-detail">
+            <div class="card-container">
+              <button class="pixel-button back-button" onclick="showMainContent()">
+                <i class="fas fa-arrow-left pixel-icon"></i>
+                Volver a Proyectos
+              </button>
+              
+              <div class="project-header">
+                <div class="project-hero">
+                  <div class="project-icon">
+                    <i class="fas fa-shield-alt"></i>
+                  </div>
+                  <div>
+                    <h1 class="project-title">Security App for Promerica</h1>
+                    <p class="project-subtitle">Aplicación de seguridad con autenticación biométrica</p>
+                    <p class="project-description">
+                      Implementé autenticación biométrica con huellas digitales y reconocimiento facial, 
+                      junto con notificaciones en Android para reforzar la seguridad de la aplicación bancaria.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="project-features">
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="feature-label">Seguridad</div>
+                  </div>
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <div class="feature-label">Huella digital</div>
+                  </div>
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="feature-label">Verificación</div>
+                  </div>
+                </div>
+
+                <div class="tech-tags">
+                  <span class="tech-tag">Android</span>
+                  <span class="tech-tag">Biometría</span>
+                  <span class="tech-tag">Kotlin</span>
+                  <span class="tech-tag">Firebase APIs</span>
+                </div>
+              </div>
+
+              <div class="card-container">
+                <h2 class="subtitle">Galería de imágenes</h2>
+                <div class="project-gallery">
+                  <div class="gallery-item">Pantalla Principal</div>
+                  <div class="gallery-item">Autenticación</div>
+                  <div class="gallery-item">Dashboard</div>
+                </div>
+                
+                <div class="project-links">
+                  <a href="#" class="pixel-button">
+                    <i class="fab fa-github pixel-icon"></i>
+                    GitHub
+                  </a>
+                  <a href="#" class="pixel-button">
+                    <i class="fas fa-external-link-alt pixel-icon"></i>
+                    Demo
+                  </a>
+                  <a href="#" class="pixel-button">
+                    <i class="fas fa-info-circle pixel-icon"></i>
+                    Ver más
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- content-wrapper -->
+
+          <!-- Task Manager Project Detail -->
+          <div id="project-detail-task-manager" class="project-detail">
+            <div class="card-container">
+              <button class="pixel-button back-button" onclick="showMainContent()">
+                <i class="fas fa-arrow-left pixel-icon"></i>
+                Volver a Proyectos
+              </button>
+              
+              <div class="project-header">
+                <div class="project-hero">
+                  <div class="project-icon">
+                    <i class="fas fa-tasks"></i>
+                  </div>
+                  <div>
+                    <h1 class="project-title">Task Manager Pro</h1>
+                    <p class="project-subtitle">Gestión avanzada de tareas y proyectos</p>
+                    <p class="project-description">
+                      Aplicación web moderna para gestión de tareas con sincronización en tiempo real, 
+                      colaboración en equipo y análisis de productividad.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="project-features">
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="fas fa-sync"></i>
+                    </div>
+                    <div class="feature-label">Tiempo Real</div>
+                  </div>
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="fas fa-users"></i>
+                    </div>
+                    <div class="feature-label">Colaboración</div>
+                  </div>
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="feature-label">Analytics</div>
+                  </div>
+                </div>
+
+                <div class="tech-tags">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">WebSocket</span>
+                  <span class="tech-tag">MongoDB</span>
+                </div>
+              </div>
+
+              <div class="card-container">
+                <h2 class="subtitle">Características principales</h2>
+                <div class="project-gallery">
+                  <div class="gallery-item">Dashboard Principal</div>
+                  <div class="gallery-item">Gestión de Tareas</div>
+                  <div class="gallery-item">Colaboración en Tiempo Real</div>
+                  <div class="gallery-item">Reportes y Analytics</div>
+                </div>
+                
+                <div class="project-links">
+                  <a href="#" class="pixel-button">
+                    <i class="fab fa-github pixel-icon"></i>
+                    GitHub
+                  </a>
+                  <a href="#" class="pixel-button">
+                    <i class="fas fa-external-link-alt pixel-icon"></i>
+                    Demo Live
+                  </a>
+                  <a href="#" class="pixel-button">
+                    <i class="fas fa-download pixel-icon"></i>
+                    Descargar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Language Learning App Detail -->
+          <div id="project-detail-language-app" class="project-detail">
+            <div class="card-container">
+              <button class="pixel-button back-button" onclick="showMainContent()">
+                <i class="fas fa-arrow-left pixel-icon"></i>
+                Volver a Proyectos
+              </button>
+              
+              <div class="project-header">
+                <div class="project-hero">
+                  <div class="project-icon">
+                    <i class="fas fa-language"></i>
+                  </div>
+                  <div>
+                    <h1 class="project-title">Language Learning Platform</h1>
+                    <p class="project-subtitle">Plataforma móvil para aprendizaje de idiomas</p>
+                    <p class="project-description">
+                      Aplicación móvil con lecciones interactivas, gamificación avanzada y 
+                      reconocimiento de voz para el aprendizaje efectivo de idiomas.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="project-features">
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="feature-label">Gamificación</div>
+                  </div>
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="fas fa-microphone"></i>
+                    </div>
+                    <div class="feature-label">Reconocimiento de Voz</div>
+                  </div>
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="feature-label">Logros</div>
+                  </div>
+                </div>
+
+                <div class="tech-tags">
+                  <span class="tech-tag">Swift</span>
+                  <span class="tech-tag">SwiftUI</span>
+                  <span class="tech-tag">Core ML</span>
+                  <span class="tech-tag">Speech Framework</span>
+                </div>
+              </div>
+
+              <div class="card-container">
+                <h2 class="subtitle">Funcionalidades</h2>
+                <div class="project-gallery">
+                  <div class="gallery-item">Lecciones Interactivas</div>
+                  <div class="gallery-item">Práctica de Pronunciación</div>
+                  <div class="gallery-item">Sistema de Logros</div>
+                  <div class="gallery-item">Progreso Personalizado</div>
+                </div>
+                
+                <div class="project-links">
+                  <a href="#" class="pixel-button">
+                    <i class="fab fa-app-store pixel-icon"></i>
+                    App Store
+                  </a>
+                  <a href="#" class="pixel-button">
+                    <i class="fab fa-github pixel-icon"></i>
+                    Código Fuente
+                  </a>
+                  <a href="#" class="pixel-button">
+                    <i class="fas fa-play pixel-icon"></i>
+                    Video Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Platform Detail -->
+          <div id="project-detail-blog-platform" class="project-detail">
+            <div class="card-container">
+              <button class="pixel-button back-button" onclick="showMainContent()">
+                <i class="fas fa-arrow-left pixel-icon"></i>
+                Volver a Proyectos
+              </button>
+              
+              <div class="project-header">
+                <div class="project-hero">
+                  <div class="project-icon">
+                    <i class="fas fa-blog"></i>
+                  </div>
+                  <div>
+                    <h1 class="project-title">Modern Blog Platform</h1>
+                    <p class="project-subtitle">Plataforma de blogging profesional</p>
+                    <p class="project-description">
+                      Plataforma completa de blogging con editor markdown avanzado, 
+                      sistema de comentarios en tiempo real y panel de administración.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="project-features">
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="feature-label">Editor Avanzado</div>
+                  </div>
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="feature-label">Comentarios</div>
+                  </div>
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="feature-label">Admin Panel</div>
+                  </div>
+                </div>
+
+                <div class="tech-tags">
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Express.js</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">Socket.io</span>
+                </div>
+              </div>
+
+              <div class="card-container">
+                <h2 class="subtitle">Características técnicas</h2>
+                <div class="project-gallery">
+                  <div class="gallery-item">Editor Markdown</div>
+                  <div class="gallery-item">Sistema de Usuarios</div>
+                  <div class="gallery-item">Panel Administrativo</div>
+                  <div class="gallery-item">SEO Optimizado</div>
+                </div>
+                
+                <div class="project-links">
+                  <a href="#" class="pixel-button">
+                    <i class="fas fa-external-link-alt pixel-icon"></i>
+                    Sitio Web
+                  </a>
+                  <a href="#" class="pixel-button">
+                    <i class="fab fa-github pixel-icon"></i>
+                    Repositorio
+                  </a>
+                  <a href="#" class="pixel-button">
+                    <i class="fas fa-file-alt pixel-icon"></i>
+                    Documentación
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- col center-container -->
       </div>
-      <!-- row -->
     </div>
-    <!-- container-fluid -->
-    <script src="./js/nav-bar.js"></script>
+
+    <!-- Translation Script -->
+    <script src="./js/translations.js"></script>
+    
+    <script>
+      // Navigation functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        function setActiveLink() {
+          const sections = document.querySelectorAll('#about, #skills, #projects, #experience');
+          const navLinks = document.querySelectorAll('.nav-link');
+          
+          let currentSection = '';
+          
+          sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100;
+            if (window.scrollY >= sectionTop) {
+              currentSection = section.getAttribute('id');
+            }
+          });
+          
+          navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${currentSection}`) {
+              link.classList.add('active');
+            }
+          });
+        }
+        
+        setActiveLink();
+        window.addEventListener('scroll', setActiveLink);
+        
+        document.querySelectorAll('.nav-link').forEach(link => {
+          link.addEventListener('click', function () {
+            document.querySelectorAll('.nav-link').forEach(el => {
+              el.classList.remove('active');
+            });
+            this.classList.add('active');
+          });
+        });
+      });
+
+      // Project detail functionality
+      function showProjectDetail(projectId) {
+        // Hide main content
+        document.getElementById('main-content').style.display = 'none';
+        
+        // Hide all project details
+        const projectDetails = document.querySelectorAll('.project-detail');
+        projectDetails.forEach(detail => {
+          detail.classList.remove('active');
+        });
+        
+        // Show selected project detail
+        const selectedProject = document.getElementById(`project-detail-${projectId}`);
+        if (selectedProject) {
+          selectedProject.classList.add('active');
+        }
+        
+        // Scroll to top
+        window.scrollTo(0, 0);
+      }
+
+      function showMainContent() {
+        // Hide all project details
+        const projectDetails = document.querySelectorAll('.project-detail');
+        projectDetails.forEach(detail => {
+          detail.classList.remove('active');
+        });
+        
+        // Show main content
+        document.getElementById('main-content').style.display = 'block';
+        
+        // Scroll to projects section
+        document.getElementById('projects').scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    </script>
   </body>
 </html>
