@@ -1,0 +1,41 @@
+/* Estilos para corregir problemas de visualización con contenedores anidados */
+
+/* Asegurar que los contenedores de detalles de proyecto estén correctamente posicionados */
+.project-detail {
+  position: relative;
+  z-index: 10;
+  background: white;
+}
+
+.project-detail.active {
+  position: relative;
+  z-index: 100;
+  background: white;
+}
+
+/* Evitar que aparezcan contenedores fantasma */
+.col.center-container {
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Ocultar cualquier contenedor extra cuando se muestra un detalle de proyecto */
+.project-detail.active + div:not(.project-detail) {
+  display: none !important;
+}
+
+/* Asegurar que el detalle de proyecto ocupe todo el espacio disponible */
+.project-detail.active {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Ocultar cualquier elemento que pueda estar causando el espacio extra */
+body.showing-project-detail .col.center-container > div:not(.project-detail.active):not(.navbar):not(#main-content) {
+  display: none !important;
+}
+
+/* Evitar desplazamiento horizontal */
+html, body {
+  overflow-x: hidden;
+}

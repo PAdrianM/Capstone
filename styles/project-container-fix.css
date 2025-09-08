@@ -1,0 +1,33 @@
+/* Ajustes para el proyecto container mobile */
+
+/* Mejora para proyecto container mobile */
+.project-container.mobile-project {
+  min-height: 380px; /* Asegura suficiente altura */
+  justify-content: space-between;
+}
+
+/* Centra la imagen en el contenedor y asegura que no se corte */
+.project-container.mobile-project img {
+  width: auto;
+  max-width: 90%; /* Limita el ancho para evitar desbordamiento */
+  object-position: center; /* Centra la imagen dentro del contenedor */
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+  .project-container.mobile-project {
+    min-height: 420px;
+  }
+  
+  .project-container.mobile-project img {
+    max-width: 85%;
+    height: 220px;
+  }
+}
+
+/* Para dispositivos muy pequeños */
+@media (max-width: 576px) {
+  .project-container.mobile-project img {
+    height: 200px;
+  }
+}

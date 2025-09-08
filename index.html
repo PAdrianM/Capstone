@@ -18,6 +18,10 @@
     />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/style-detail.css" />
+    <link rel="stylesheet" href="./styles/mobile-gallery.css" />
+    <link rel="stylesheet" href="./styles/container-fix.css" />
+    <link rel="stylesheet" href="./styles/project-detail-fix.css" />
+    <link rel="stylesheet" href="./styles/project-container-fix.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -218,11 +222,11 @@
               <h2 class="subtitle">Projects</h2>
               <div class="projects-container">
                 <div
-                  class="project-container"
+                  class="project-container mobile-project"
                   onclick="showProjectDetail('security-app')"
                 >
                   <img
-                    src="https://via.placeholder.com/400x250/4783f1/ffffff?text=Security+App"
+                    src="./assets/images/promGt/banner.png"
                     alt="Security App for Promerica"
                   />
                   <div class="project-content">
@@ -245,11 +249,11 @@
                 </div>
 
                 <div
-                  class="project-container"
+                  class="project-container mobile-project"
                   onclick="showProjectDetail('task-manager')"
                 >
                   <img
-                    src="https://via.placeholder.com/400x250/506182/ffffff?text=Task+Manager"
+                    src="./assets/images/urChefMate/banner.png"
                     alt="Task Manager App"
                   />
                   <div class="project-content">
@@ -270,11 +274,11 @@
                 </div>
 
                 <div
-                  class="project-container"
+                  class="project-container mobile-project"
                   onclick="showProjectDetail('language-app')"
                 >
                   <img
-                    src="https://via.placeholder.com/400x250/3a6bc8/ffffff?text=Language+App"
+                    src="./assets/images/gestorUsuarios/banner.png"
                     alt="Language Learning App"
                   />
                   <div class="project-content">
@@ -295,11 +299,11 @@
                 </div>
 
                 <div
-                  class="project-container"
+                  class="project-container mobile-project"
                   onclick="showProjectDetail('blog-platform')"
                 >
                   <img
-                    src="https://via.placeholder.com/400x250/6c757d/ffffff?text=Blog+Platform"
+                    src="./assets/images/organizr/banner.png"
                     alt="Blog Platform"
                   />
                   <div class="project-content">
@@ -320,11 +324,11 @@
                 </div>
 
                 <div
-                  class="project-container"
+                  class="project-container mobile-project"
                   onclick="showProjectDetail('imc-calculator-app')"
                 >
                   <img
-                    src="https://via.placeholder.com/400x250/6c757d/ffffff?text=IMC+Calculator+App"
+                    src="./assets/images/imc/banner.png"
                     alt="IMC Calculator App"
                   />
                   <div class="project-content">
@@ -340,17 +344,16 @@
                       <li><i class="fab fa-github"></i> GitHub</li>
                       <li><i class="fas fa-file-code"></i> XML</li>
                       <li><i class="fas fa-database"></i> DBA SQL</li>
-                      
                     </ul>
                   </div>
                 </div>
 
                 <div
-                  class="project-container"
+                  class="project-container mobile-project"
                   onclick="showProjectDetail('team-events-app')"
                 >
                   <img
-                    src="https://via.placeholder.com/400x250/6c757d/ffffff?text=Team+Events+App"
+                    src="./assets/images/teamEvents/banner.png"
                     alt="Team Events App"
                   />
                   <div class="project-content">
@@ -372,11 +375,11 @@
                 </div>
 
                 <div
-                  class="project-container"
+                  class="project-container mobile-project"
                   onclick="showProjectDetail('paginacion-app')"
                 >
                   <img
-                    src="https://via.placeholder.com/400x250/6c757d/ffffff?text=Paginacion+App"
+                    src="./assets/images/paging3/banner.png"
                     alt="Paginacion App"
                   />
                   <div class="project-content">
@@ -396,7 +399,6 @@
                     </ul>
                   </div>
                 </div>
-
               </div>
             </div>
 
@@ -411,15 +413,44 @@
                       Mobile Software Engineer, Digital Geko, (2023-Present)
                     </h3>
                     <p class="resume-text">
-                      Responsible for developing native Android and iOS
-                      applications, collaborating with cross-functional teams to
-                      deliver new features, ensuring code quality through unit
-                      testing, and implementing security enhancements.
+                      • Desarrollo y mantenimiento de la App Promerica en
+                      Android (Java/Kotlin) e iOS (Swift). • Optimización de
+                      código bajo arquitectura MVVM (Android) y MVC (iOS). •
+                      Implementación de inyección de dependencias (Dagger,
+                      Hilt), manejo de concurrencia con Flow y Threads en
+                      Android, mejorando escalabilidad y eficiencia. • Consumo
+                      de APIs RESTful e integración de librerías bancarias y
+                      SDKs externos. • Mejoras en UI/UX y experiencia de usuario
+                      a través de ajustes visuales y componentes personalizados.
+                      • Colaboración en entornos ágiles con Jira y Confluence.
+                    </p>
+
+                    <h3>Desarrollo Web y Bases de Datos (2024-Present)</h3>
+                    <p class="resume-text">
+                      • Desarrollo de aplicaciones web con Angular, React,
+                      HTML5, CSS, JavaScript y TypeScript. • Diseño y consumo de
+                      APIs RESTful para interfaces dinámicas. • Diseño y
+                      administración de bases de datos relacionales (Oracle,
+                      SQL, PostgreSQL).
+                    </p>
+
+                    <h3>Desarrollador Java y DBA SQL, ORACLE (2020-2023)</h3>
+                    <p class="resume-text">
+                      • Desarrollo de aplicaciones y programas en Java,
+                      aplicando principios de programación orientada a objetos y
+                      buenas prácticas de arquitectura. • Diseño, modelado y
+                      administración de bases de datos relacionales (Oracle,
+                      SQL), incluyendo normalización de esquemas, creación de
+                      procedimientos almacenados y optimización de consultas. •
+                      Gestión integral de requerimientos con clientes, desde la
+                      recolección de necesidades hasta la entrega de soluciones
+                      funcionales y mantenibles.
                     </p>
                   </div>
                   <div class="card-container">
                     <div class="education">
                       <h2 class="subtitle">Education</h2>
+                      
                       <h3>
                         Bachelor of Science in Computer Systems (2024-Present)
                       </h3>
@@ -428,6 +459,24 @@
                         Engineering, International certificate as a systems
                         engineer
                       </p>
+                    </div>
+                  </div>
+
+                  <div class="card-container">
+                    <div class="education">
+                      <h2 class="subtitle">Habilidades tecnicas</h2>
+                      <h3>
+                        •	Lenguajes: Java, Kotlin, Swift, JavaScript, TypeScript, SQL
+                      </h3>
+                      <h3>
+                        •	Frameworks / Librerías: Angular, React, Spring Boot, Jetpack Compose, SwiftUI
+                      </h3>
+                      <h3>
+                        •	Herramientas: Git/GitHub, Jira, Confluence, SonarQube, Fluid Attacks, Figma, Docker.
+                      </h3>
+                      <h3>
+                        •	Especialidades: Consumo de APIs RESTful, Arquitectura MVVM/MVC, Desarrollo seguro, Optimización de código, Análisis de requerimientos, Documentación técnica
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -448,6 +497,14 @@
                       <p>
                         Covers core Android fundamentals such as activity
                         lifecycle, UI layouts, and data storage.
+                      </p>
+                      <h3>Desarrollo de Aplicaciones con Kotlin y Jetpack Compose (2023 - 2024)</h3>
+                      <p>
+                        Curso avanzado de desarrollo de aplicaciones móviles nativas para Android utilizando Kotlin y Jetpack Compose, enfocado en la creación de interfaces de usuario modernas y reactivas.
+                      </p>
+                      <h3>Full-Stack Web Development (En curso) – HTML, CSS, JS, Node.js, React, PostgreSQL, Web3 & DApps (2025)</h3>
+                      <p>
+                        Curso avanzado de desarrollo de aplicaciones web utilizando tecnologías modernas como HTML, CSS, JavaScript, Node.js, React, PostgreSQL, Web3 y DApps.
                       </p>
                     </div>
                   </div>
@@ -639,8 +696,8 @@
 
               <div class="card-container">
                 <h2 class="subtitle">Características principales</h2>
-                <div class="project-gallery">
-                  <div class="gallery-item">
+                <div class="project-gallery mobile-gallery">
+                  <div class="gallery-item mobile-device iphone">
                     <img
                       src="./assets/images/urChefMate/seccion-login.png"
                       alt="Dashboard Principal"
@@ -649,7 +706,7 @@
                     />
                   </div>
 
-                  <div class="gallery-item">
+                  <div class="gallery-item mobile-device android">
                     <img
                       src="./assets/images/urChefMate/seccion-home.png"
                       alt="Dashboard Principal"
@@ -657,7 +714,7 @@
                       height="100%"
                     />
                   </div>
-                  <div class="gallery-item">
+                  <div class="gallery-item mobile-device">
                     <img
                       src="./assets/images/urChefMate/seccion-crear-receta.png"
                       alt="Dashboard Principal"
@@ -665,7 +722,7 @@
                       height="100%"
                     />
                   </div>
-                  <div class="gallery-item">
+                  <div class="gallery-item mobile-device">
                     <img
                       src="./assets/images/urChefMate/seccion-favoritos.png"
                       alt="Dashboard Principal"
@@ -673,7 +730,7 @@
                       height="100%"
                     />
                   </div>
-                  <div class="gallery-item">
+                  <div class="gallery-item mobile-device">
                     <img
                       src="./assets/images/urChefMate/seccion-ver-receta.png"
                       alt="Dashboard Principal"
@@ -681,7 +738,7 @@
                       height="100%"
                     />
                   </div>
-                  <div class="gallery-item">
+                  <div class="gallery-item mobile-device">
                     <img
                       src="./assets/images/urChefMate/seccion-visualizar usuario.png"
                       alt="Dashboard Principal"
@@ -803,7 +860,7 @@
               <div class="card-container">
                 <h2 class="subtitle">Funcionalidades</h2>
                 <div class="project-gallery">
-                  <div class="gallery-item">
+                  <div class="gallery-item mobile-device">
                     <img
                       src="./assets/images/gestorUsuarios/welcome.png"
                       alt="Dashboard Principal"
@@ -811,7 +868,7 @@
                       height="100%"
                     />
                   </div>
-                  <div class="gallery-item">
+                  <div class="gallery-item mobile-device">
                     <img
                       src="./assets/images/gestorUsuarios/login.png"
                       alt="Dashboard Principal"
@@ -819,7 +876,7 @@
                       height="100%"
                     />
                   </div>
-                  <div class="gallery-item">
+                  <div class="gallery-item mobile-device">
                     <img
                       src="./assets/images/gestorUsuarios/register.png"
                       alt="Dashboard Principal"
@@ -827,7 +884,7 @@
                       height="100%"
                     />
                   </div>
-                  <div class="gallery-item">
+                  <div class="gallery-item mobile-device">
                     <img
                       src="./assets/images/gestorUsuarios/gestor de empleados.png"
                       alt="Dashboard Principal"
@@ -835,7 +892,7 @@
                       height="100%"
                     />
                   </div>
-                  <div class="gallery-item">
+                  <div class="gallery-item mobile-device">
                     <img
                       src="./assets/images/gestorUsuarios/cierre de sesion.png"
                       alt="Dashboard Principal"
@@ -890,12 +947,13 @@
                   <div>
                     <h1 class="project-title">Orgnizr App</h1>
                     <p class="project-subtitle">
-                      Aplicacion gestora de tareas con sincronización en
-                      tiempo real
+                      Aplicacion gestora de tareas con sincronización en tiempo
+                      real
                     </p>
                     <p class="project-description">
-                      La app permite al usuario crear, visualizar y organizar tareas personales, 
-                      de negocios y otras, facilitando la productividad diaria al ofrecer una interfaz intuitiva 
+                      La app permite al usuario crear, visualizar y organizar
+                      tareas personales, de negocios y otras, facilitando la
+                      productividad diaria al ofrecer una interfaz intuitiva
                       para el seguimiento de pendientes.
                     </p>
                   </div>
@@ -935,7 +993,7 @@
               <div class="card-container">
                 <h2 class="subtitle">Características técnicas</h2>
                 <div class="project-gallery">
-                  <div class="gallery-item">
+                  <div class="gallery-item mobile-device">
                     <img
                       src="./assets/images/organizr/home.png"
                       alt="Dashboard Principal"
@@ -943,7 +1001,7 @@
                       height="100%"
                     />
                   </div>
-                  <div class="gallery-item">
+                  <div class="gallery-item mobile-device">
                     <img
                       src="./assets/images/organizr/create task.png"
                       alt="Dashboard Principal"
@@ -951,7 +1009,7 @@
                       height="100%"
                     />
                   </div>
-                  <div class="gallery-item">
+                  <div class="gallery-item mobile-device">
                     <img
                       src="./assets/images/organizr/select type.png"
                       alt="Dashboard Principal"
@@ -959,7 +1017,7 @@
                       height="100%"
                     />
                   </div>
-                  <div class="gallery-item">
+                  <div class="gallery-item mobile-device">
                     <img
                       src="./assets/images/organizr/select hour.png"
                       alt="Dashboard Principal"
@@ -967,7 +1025,7 @@
                       height="100%"
                     />
                   </div>
-                  <div class="gallery-item">
+                  <div class="gallery-item mobile-device">
                     <img
                       src="./assets/images/organizr/home task.png"
                       alt="Dashboard Principal"
@@ -975,7 +1033,7 @@
                       height="100%"
                     />
                   </div>
-                  <div class="gallery-item">
+                  <div class="gallery-item mobile-device">
                     <img
                       src="./assets/images/organizr/filter.png"
                       alt="Dashboard Principal"
@@ -1017,9 +1075,8 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- IMC Calculator Project Detail -->
+          <!-- IMC Calculator Project Detail -->
           <div id="project-detail-imc-calculator-app" class="project-detail">
             <div class="card-container">
               <button
@@ -1041,9 +1098,10 @@
                       Aplicación para calcular el Índice de Masa Corporal
                     </p>
                     <p class="project-description">
-                      Este proyecto es una colección de ejercicios y ejemplos desarrollados en Kotlin, 
-                      pensado para personas que están comenzando en el mundo de la programación con este lenguaje 
-                      y el desarrollo de aplicaciones Android.
+                      Este proyecto es una colección de ejercicios y ejemplos
+                      desarrollados en Kotlin, pensado para personas que están
+                      comenzando en el mundo de la programación con este
+                      lenguaje y el desarrollo de aplicaciones Android.
                     </p>
                   </div>
                 </div>
@@ -1089,7 +1147,7 @@
               <div class="card-container">
                 <h2 class="subtitle">Características principales</h2>
                 <div class="project-gallery">
-                  <div class="gallery-item">
+                  <div class="gallery-item mobile-device">
                     <img
                       src="./assets/images/imc/calculator.png"
                       alt="Dashboard Principal"
@@ -1098,7 +1156,7 @@
                     />
                   </div>
 
-                  <div class="gallery-item">
+                  <div class="gallery-item mobile-device">
                     <img
                       src="./assets/images/imc/result.png"
                       alt="Dashboard Principal"
@@ -1163,8 +1221,13 @@
                       Aplicación para gestionar eventos y actividades
                     </p>
                     <p class="project-description">
-                      Team Events es una aplicación móvil desarrollada para iOS en Swift, cuyo propósito es facilitar la gestión de eventos y usuarios dentro de equipos o grupos de trabajo. 
-                      La app está pensada para ser intuitiva y fácil de usar, permitiendo que los miembros del equipo puedan organizar actividades, registrarse y mantener la información relevante de forma segura.
+                      Team Events es una aplicación móvil desarrollada para iOS
+                      en Swift, cuyo propósito es facilitar la gestión de
+                      eventos y usuarios dentro de equipos o grupos de trabajo.
+                      La app está pensada para ser intuitiva y fácil de usar,
+                      permitiendo que los miembros del equipo puedan organizar
+                      actividades, registrarse y mantener la información
+                      relevante de forma segura.
                     </p>
                   </div>
                 </div>
@@ -1246,10 +1309,15 @@
                       Aplicación para gestionar la paginación de datos
                     </p>
                     <p class="project-description">
-                      Paging3 es un proyecto de ejemplo que implementa la paginación eficiente de datos en aplicaciones Android utilizando la librería Paging 3 de Jetpack. 
-                      El objetivo principal es mostrar cómo cargar grandes volúmenes de información de forma progresiva, 
-                      optimizando el rendimiento y la experiencia del usuario. 
-                      Incluye buenas prácticas de arquitectura moderna en Android, integración con fuentes remotas y locales de datos, y ejemplos de uso con RecyclerView.
+                      Paging3 es un proyecto de ejemplo que implementa la
+                      paginación eficiente de datos en aplicaciones Android
+                      utilizando la librería Paging 3 de Jetpack. El objetivo
+                      principal es mostrar cómo cargar grandes volúmenes de
+                      información de forma progresiva, optimizando el
+                      rendimiento y la experiencia del usuario. Incluye buenas
+                      prácticas de arquitectura moderna en Android, integración
+                      con fuentes remotas y locales de datos, y ejemplos de uso
+                      con RecyclerView.
                     </p>
                   </div>
                 </div>
@@ -1277,9 +1345,7 @@
                     <div class="feature-icon">
                       <i class="fas fa-code-branch"></i>
                     </div>
-                    <div class="feature-label">
-                      Arquitectura MVVM
-                    </div>
+                    <div class="feature-label">Arquitectura MVVM</div>
                   </div>
                 </div>
 
@@ -1299,7 +1365,7 @@
               <div class="card-container">
                 <h2 class="subtitle">Características principales</h2>
                 <div class="project-gallery">
-                  <div class="gallery-item">
+                  <div class="gallery-item mobile-device">
                     <img
                       src="./assets/images/paging3/img1.png"
                       alt="Dashboard Principal"
@@ -1308,7 +1374,7 @@
                     />
                   </div>
 
-                  <div class="gallery-item">
+                  <div class="gallery-item mobile-device">
                     <img
                       src="./assets/images/paging3/img2.png"
                       alt="Dashboard Principal"
@@ -1350,7 +1416,7 @@
               </div>
             </div>
           </div>
-
+        </div>
       </div>
     </div>
 
@@ -1360,6 +1426,11 @@
     <script>
       // Navigation functionality
       document.addEventListener("DOMContentLoaded", function () {
+        // Ocultar todos los detalles de proyecto al inicio
+        const projectDetails = document.querySelectorAll(".project-detail");
+        projectDetails.forEach((detail) => {
+          detail.style.display = "none";
+        });
         function setActiveLink() {
           const sections = document.querySelectorAll(
             "#about, #skills, #projects, #experience"
@@ -1401,6 +1472,9 @@
         // Hide main content
         document.getElementById("main-content").style.display = "none";
 
+        // Add class to body to help with styling
+        document.body.classList.add("showing-project-detail");
+
         // Hide all project details
         const projectDetails = document.querySelectorAll(".project-detail");
         projectDetails.forEach((detail) => {
@@ -1413,10 +1487,9 @@
         );
         if (selectedProject) {
           selectedProject.classList.add("active");
+          // Asegurarse de que esté visible
+          selectedProject.style.display = "block";
         }
-
-        // Scroll to top
-        window.scrollTo(0, 0);
       }
 
       function showMainContent() {
@@ -1424,7 +1497,12 @@
         const projectDetails = document.querySelectorAll(".project-detail");
         projectDetails.forEach((detail) => {
           detail.classList.remove("active");
+          // Asegurarse de que esté oculto
+          detail.style.display = "none";
         });
+
+        // Remove class from body
+        document.body.classList.remove("showing-project-detail");
 
         // Show main content
         document.getElementById("main-content").style.display = "block";

@@ -1,0 +1,51 @@
+/* ========== AJUSTES PARA EL CONTENEDOR DE TARJETAS ========== */
+
+/* Asegurar que el card-container maneje correctamente el contenido desbordante */
+.card-container {
+  overflow: hidden; /* Previene que el contenido se salga */
+  width: auto; /* Asegura que use el ancho disponible */
+  max-width: 100%; /* Limita el ancho máximo al 100% del contenedor padre */
+  box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+/* Asegura que todos los elementos dentro del card-container respeten sus límites */
+.card-container * {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Ajusta específicamente el contenedor de galerías dentro de card-container */
+.card-container .project-gallery.mobile-gallery {
+  max-width: 100%; /* Limita el ancho al contenedor padre */
+  margin-left: 0;
+  margin-right: 0;
+  padding: 10px 0; /* Agrega espacio vertical pero no horizontal */
+}
+
+/* Ajusta los elementos de galería dentro del card-container para pequeños dispositivos */
+@media (max-width: 576px) {
+  .card-container {
+    padding: 15px; /* Menos padding en móviles */
+  }
+  
+  .card-container .project-gallery.mobile-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+  }
+  
+  .gallery-item.mobile-device {
+    max-width: 120px;
+  }
+}
+
+/* Ajuste para dispositivos muy pequeños */
+@media (max-width: 360px) {
+  .card-container .project-gallery.mobile-gallery {
+    grid-template-columns: repeat(2, 1fr); /* Fuerza a solo 2 columnas */
+    gap: 10px;
+  }
+  
+  .gallery-item.mobile-device {
+    max-width: 110px;
+  }
+}

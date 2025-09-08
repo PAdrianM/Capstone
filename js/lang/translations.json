@@ -8,7 +8,7 @@
     },
     "about": {
       "title": "About Me",
-      "description": "I'm a results-driven Mobile and Web Developer with over three years of experience crafting scalable, secure, and responsive solutions using MVVM, CI/CD pipelines, and PWA standards. Skilled in Kotlin, Java, Swift, HTML5, CSS3, Bootstrap, and modern JavaScript frameworks, I leverage containerization, automated testing, and performance optimization to deliver seamless user experiences."
+      "description": "Software developer with over 4 years of experience in mobile, web development, and database administration. I have worked on projects for the banking sector and independent solutions, with expertise in Java, Kotlin, Spring Boot, Angular, HTML5, CSS, JavaScript, and TypeScript. I manage relational databases (Oracle, SQL, PostgreSQL), consume RESTful APIs, version control with Git/GitHub, and implement best practices for security, scalability, and code optimization. Passionate about innovation and interested in contributing to business intelligence (BI) projects and high-impact technological solutions."
     },
     "profile": {
       "title": "Adrian Garcia",
@@ -161,7 +161,7 @@
     },
     "about": {
       "title": "Acerca de mí",
-      "description": "Soy un Desarrollador Móvil y Web orientado a resultados con más de tres años de experiencia creando soluciones escalables, seguras y responsivas utilizando MVVM, pipelines CI/CD y estándares PWA. Con habilidades en Kotlin, Java, Swift, HTML5, CSS3, Bootstrap y frameworks modernos de JavaScript, aprovecho la containerización, pruebas automatizadas y optimización de rendimiento para ofrecer experiencias de usuario perfectas."
+      "description": "Desarrollador de software con más de 4 años de experiencia en desarrollo móvil, web y administración de bases de datos. He trabajado en proyectos para el sector bancario y en soluciones independientes, con experiencia en Java, Kotlin, Spring Boot, Angular, HTML5, CSS, JavaScript y TypeScript. Manejo bases de datos relacionales (Oracle, SQL, PostgreSQL), consumo de APIs RESTful, versionamiento con Git/GitHub e implementación de buenas prácticas de seguridad, escalabilidad y optimización de código. Apasionado por la innovación y con interés en contribuir en proyectos de inteligencia de negocios (BI) y soluciones tecnológicas de alto impacto."
     },
     "profile": {
       "title": "Adrian Garcia",
