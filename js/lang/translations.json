@@ -25,23 +25,103 @@
     "projects": {
       "title": "Projects",
       "project1": {
-        "title": "Security App for Promerica",
-        "description": "Security application with biometric authentication to enhance banking security."
+        "title": "Mobile native develop for Promerica App",
+        "description": "Native developer of the Promerica Guatemala App, implementing security enhancements, code optimization, and new features in Android (Java/Kotlin) and iOS (Swift)."
       },
       "project2": {
-        "title": "Task Manager Pro",
-        "description": "Modern web application for task management with real-time synchronization."
+        "title": "Recipe Manager Pro",
+        "description": "Modern mobile application for recipe management with real-time data synchronization."
       },
       "project3": {
-        "title": "Language Learning Platform",
-        "description": "Mobile platform for language learning with interactive lessons and gamification."
+        "title": "Worker Management App",
+        "description": "Mobile platform for managing workers with features for task tracking, scheduling, and internal communication."
       },
       "project4": {
-        "title": "Modern Blog Platform",
-        "description": "Blogging platform with advanced editor and real-time comment system."
+        "title": "Organizr App",
+        "description": "Task management app with advanced features for organization and collaboration."
       },
       "back": "Back to Projects",
       "details": "See details"
+    },
+    "projectDetails": {
+      "security": {
+        "title": "Native Developer for Promerica GT App",
+        "subtitle": "Native Android/iOS developer for the Promerica GT mobile app",
+        "description": "As a native mobile developer for the Promerica Guatemala App, I participate in the development and maintenance of new functionalities in both Android (Java/Kotlin) and iOS (Swift). My responsibilities include implementing security enhancements (biometric authentication, permission handling, and banking libraries), optimizing code and performance by applying architectures such as MVVM and MVC, and integrating RESTful APIs and external SDKs. I also collaborate in continuously improving the user experience (UI/UX), working under agile methodologies with tools like Jira and Confluence, and ensuring compliance with quality and security standards through tools like SonarQube and Fluid Attacks.",
+        "features": {
+          "verification": "Verification",
+          "security": "Security",
+          "continuous": "Continuous Improvement",
+          "interfaces": "Visual Interfaces",
+          "responsive": "Responsive Design",
+          "administration": "SQL Administration"
+        }
+      },
+      "recipe": {
+        "title": "Recipe Manager",
+        "subtitle": "Advanced kitchen recipe manager",
+        "description": "It's an application designed to help you in the kitchen, probably facilitating the management of recipes, ingredients, and steps to prepare different dishes. Its main purpose is usually to serve as a culinary assistant, allowing users to search, organize and follow recipes easily. Additionally, it could offer features such as creating shopping lists, recipe suggestions based on available ingredients, or even timers and reminders for each step of the preparation.",
+        "features": {
+          "management": "Recipe Management",
+          "shopping": "Shopping List",
+          "suggestions": "Smart Suggestions",
+          "steps": "Steps and Timer Management"
+        }
+      },
+      "users": {
+        "title": "Worker Management App",
+        "subtitle": "iOS mobile platform for human resource management",
+        "description": "This project is a mobile application developed in Swift for iOS that aims to consume the public API of Reqres.in. The app allows users to perform basic operations such as registration, login, and viewing a list of users obtained from the API. The project only uses standard Swift libraries (Foundation and UIKit) for managing HTTP requests, data serialization, and presenting graphical interfaces. It's ideal as an educational example to understand how to connect an iOS app with REST services, handle JSON responses, and work with visual components in UIKit.",
+        "features": {
+          "management": "User Management",
+          "authentication": "Authentication",
+          "registration": "Staff Registration",
+          "api": "REST API Consumption"
+        }
+      },
+      "organizer": {
+        "title": "Organizr App",
+        "subtitle": "Task management application with real-time synchronization",
+        "description": "The app allows users to create, view, and organize personal and business tasks, enhancing daily productivity by offering an intuitive interface for tracking to-dos.",
+        "features": {
+          "editor": "Advanced Editor",
+          "tasks": "Task Management",
+          "admin": "Admin Panel"
+        }
+      },
+      "imc": {
+        "title": "BMI Calculator",
+        "subtitle": "Application for calculating Body Mass Index",
+        "description": "This project is a collection of exercises and examples developed in Kotlin, designed for people who are getting started in the world of programming with this language and Android application development.",
+        "features": {
+          "calculator": "Custom Calculation",
+          "history": "Calculation History",
+          "graphs": "Graphical Results",
+          "recommendations": "Personalized Recommendations"
+        }
+      },
+      "team": {
+        "title": "Team Events",
+        "subtitle": "Application for managing events and activities",
+        "description": "Team Events is a mobile application developed for iOS in Swift, designed to facilitate the management of events and users within teams or work groups. The app is intended to be intuitive and easy to use, allowing team members to organize activities, register, and keep relevant information securely.",
+        "features": {
+          "events": "Event Management",
+          "members": "Member Registration",
+          "activities": "Activity Organization",
+          "notifications": "Real-time Notifications"
+        }
+      },
+      "paging": {
+        "title": "Pagination App",
+        "subtitle": "Application for managing data pagination",
+        "description": "Paging3 is an example project that implements efficient data pagination in Android applications using the Jetpack Paging 3 library. The main objective is to demonstrate how to load large volumes of information progressively, optimizing performance and user experience. It includes best practices for modern architecture in Android, integration with remote and local data sources, and examples of use with RecyclerView.",
+        "features": {
+          "management": "Efficient Data Loading",
+          "integration": "API Integration",
+          "caching": "Local Caching",
+          "error": "Error Handling"
+        }
+      }
     },
     "credentials": {
       "title": "Credentials",
@@ -98,23 +178,103 @@
     "projects": {
       "title": "Proyectos",
       "project1": {
-        "title": "App de Seguridad para Promerica",
-        "description": "Aplicación de seguridad con autenticación biométrica para reforzar la seguridad bancaria."
+        "title": "Desarrollador de aplicaciones móviles nativas para Promerica GT",
+        "description": "Desarrollador nativo de la App Promerica Guatemala, implementando mejoras de seguridad, optimización de código y nuevas funcionalidades en Android (Java/Kotlin) e iOS (Swift)."
       },
       "project2": {
-        "title": "Gestor de Tareas Pro",
-        "description": "Aplicación web moderna para gestión de tareas con sincronización en tiempo real."
+        "title": "Gestor de recetas",
+        "description": "Aplicación móvil Kotlin moderna para gestión de recetas con sincronización de datos en tiempo real."
       },
       "project3": {
-        "title": "Plataforma de Aprendizaje de Idiomas",
-        "description": "Plataforma móvil para aprendizaje de idiomas con lecciones interactivas y gamificación."
+        "title": "App gestora de trabajadores",
+        "description": " Plataforma móvil para gestión de usuarios con funciones de autenticación y autorización."
       },
       "project4": {
-        "title": "Plataforma Moderna de Blog",
-        "description": "Plataforma de blogging con editor avanzado y sistema de comentarios en tiempo real."
+        "title": "Organizr App",
+        "description": " App de organización con gestión de tareas y recordatorios."
       },
       "back": "Volver a Proyectos",
       "details": "Ver detalles"
+    },
+    "projectDetails": {
+      "security": {
+        "title": "Desarrollador nativo para la App de Promerica GT",
+        "subtitle": "Desarrollador nativo Android /iOS de de la app movil de Promerica GT",
+        "description": "Como desarrollador móvil nativo de la App Promerica Guatemala, participo en el desarrollo y mantenimiento de nuevas funcionalidades tanto en Android (Java/Kotlin) como en iOS (Swift). Mis responsabilidades incluyen la implementación de mejoras de seguridad (autenticación biométrica, manejo de permisos y librerías bancarias), la optimización de código y rendimiento aplicando arquitecturas como MVVM y MVC, y la integración de APIs RESTful y SDKs externos. También colaboro en la mejora continua de la experiencia de usuario (UI/UX), trabajando bajo metodologías ágiles con herramientas como Jira y Confluence, y garantizando el cumplimiento de estándares de calidad y seguridad mediante herramientas como SonarQube y Fluid Attacks.",
+        "features": {
+          "verification": "Verificación",
+          "security": "Seguridad",
+          "continuous": "Mejora Continua",
+          "interfaces": "Interfaces Visuales",
+          "responsive": "Diseño Responsive",
+          "administration": "Administración SQL"
+        }
+      },
+      "recipe": {
+        "title": "Gestor de recetas",
+        "subtitle": "Gestor avanzado de recetas de cocina",
+        "description": "Es una aplicación diseñada para ayudarte en la cocina, probablemente facilitando la gestión de recetas, ingredientes y pasos para preparar diferentes platillos. Su propósito principal suele ser el de servir como asistente culinario, permitiendo a los usuarios buscar, organizar y seguir recetas de manera sencilla. Además, podría ofrecer funciones como la creación de listas de compras, sugerencias de recetas basadas en ingredientes disponibles, o incluso cronómetros y recordatorios para cada paso de la preparación.",
+        "features": {
+          "management": "Gestión de Recetas",
+          "shopping": "Lista de Compras",
+          "suggestions": "Sugerencias Inteligentes",
+          "steps": "Gestión de Pasos y Temporizadores"
+        }
+      },
+      "users": {
+        "title": "App gestora de trabajadores",
+        "subtitle": "Plataforma móvil iOS para gestión de recursos humanos",
+        "description": "Este proyecto es una aplicación móvil desarrollada en Swift para iOS que tiene como objetivo consumir la API pública de Reqres.in. La app permite a los usuarios realizar operaciones básicas como registro, inicio de sesión y visualización de una lista de usuarios obtenidos desde la API. El proyecto utiliza únicamente librerías estándar de Swift (Foundation y UIKit) para la gestión de peticiones HTTP, serialización de datos y presentación de interfaces gráficas. Es ideal como ejemplo educativo para entender cómo conectar una app iOS con servicios REST, manejar respuestas JSON y trabajar con componentes visuales en UIKit.",
+        "features": {
+          "management": "Gestión de Usuarios",
+          "authentication": "Autenticación",
+          "registration": "Registro de Personal",
+          "api": "Consumo de API REST"
+        }
+      },
+      "organizer": {
+        "title": "Orgnizr App",
+        "subtitle": "Aplicacion gestora de tareas con sincronización en tiempo real",
+        "description": "La app permite al usuario crear, visualizar y organizar tareas personales, de negocios y otras, facilitando la productividad diaria al ofrecer una interfaz intuitiva para el seguimiento de pendientes.",
+        "features": {
+          "editor": "Editor Avanzado",
+          "tasks": "Gestion de tareas",
+          "admin": "Admin Panel"
+        }
+      },
+      "imc": {
+        "title": "Calculadora IMC",
+        "subtitle": "Aplicación para calcular el Índice de Masa Corporal",
+        "description": "Este proyecto es una colección de ejercicios y ejemplos desarrollados en Kotlin, pensado para personas que están comenzando en el mundo de la programación con este lenguaje y el desarrollo de aplicaciones Android.",
+        "features": {
+          "calculator": "Calculo Personalizado",
+          "history": "Historial de Cálculos",
+          "graphs": "Resultados Gráficos",
+          "recommendations": "Recomendaciones Personalizadas"
+        }
+      },
+      "team": {
+        "title": "Team Events",
+        "subtitle": "Aplicación para gestionar eventos y actividades",
+        "description": "Team Events es una aplicación móvil desarrollada para iOS en Swift, cuyo propósito es facilitar la gestión de eventos y usuarios dentro de equipos o grupos de trabajo. La app está pensada para ser intuitiva y fácil de usar, permitiendo que los miembros del equipo puedan organizar actividades, registrarse y mantener la información relevante de forma segura.",
+        "features": {
+          "events": "Gestión de Eventos",
+          "members": "Registro de Miembros",
+          "activities": "Organización de Actividades",
+          "notifications": "Notificaciones en Tiempo Real"
+        }
+      },
+      "paging": {
+        "title": "Paginación App",
+        "subtitle": "Aplicación para gestionar la paginación de datos",
+        "description": "Paging3 es un proyecto de ejemplo que implementa la paginación eficiente de datos en aplicaciones Android utilizando la librería Paging 3 de Jetpack. El objetivo principal es mostrar cómo cargar grandes volúmenes de información de forma progresiva, optimizando el rendimiento y la experiencia del usuario. Incluye buenas prácticas de arquitectura moderna en Android, integración con fuentes remotas y locales de datos, y ejemplos de uso con RecyclerView.",
+        "features": {
+          "management": "Carga Eficiente de Datos",
+          "integration": "Integración con API",
+          "caching": "Almacenamiento en Caché",
+          "error": "Manejo de Errores"
+        }
+      }
     },
     "credentials": {
       "title": "Credenciales",
